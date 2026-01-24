@@ -16,7 +16,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1f1356f4-1db3-4186-b378-aa21560ef2cd" name="Default Changelist" comment="" />
+    <list default="true" id="1f1356f4-1db3-4186-b378-aa21560ef2cd" name="Default Changelist" comment="Init project" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -174,8 +174,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1769283118011</updated>
-      <workItem from="1769283119335" duration="880000" />
+      <workItem from="1769283119335" duration="1185000" />
     </task>
+    <task id="LOCAL-00001" summary="Init project">
+      <created>1769284237572</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1769284237572</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -204,7 +212,15 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Init project" />
+    <option name="LAST_COMMIT_MESSAGE" value="Init project" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="385" y="62" width="910" height="658" key="CommitChangelistDialog2" timestamp="1769284141688">
+      <screen x="0" y="32" width="1920" height="688" />
+    </state>
+    <state x="385" y="62" width="910" height="658" key="CommitChangelistDialog2/0.32.1920.688/1920.0.1360.768@0.32.1920.688" timestamp="1769284141688" />
     <state x="449" y="32" width="1012" height="688" key="SettingsEditor" timestamp="1769283466011">
       <screen x="0" y="32" width="1920" height="688" />
     </state>
