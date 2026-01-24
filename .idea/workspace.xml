@@ -16,7 +16,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1f1356f4-1db3-4186-b378-aa21560ef2cd" name="Default Changelist" comment="Create default.conf for nginx" />
+    <list default="true" id="1f1356f4-1db3-4186-b378-aa21560ef2cd" name="Default Changelist" comment="Create docker-compose.yml">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -172,6 +174,11 @@
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -180,7 +187,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1769283118011</updated>
-      <workItem from="1769283119335" duration="2439000" />
+      <workItem from="1769283119335" duration="5039000" />
     </task>
     <task id="LOCAL-00001" summary="Init project">
       <created>1769284237572</created>
@@ -203,7 +210,14 @@
       <option name="project" value="LOCAL" />
       <updated>1769285645821</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Create docker-compose.yml">
+      <created>1769286631396</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1769286631396</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -236,9 +250,14 @@
     <MESSAGE value="Init project" />
     <MESSAGE value="Create Dockerfile for php" />
     <MESSAGE value="Create default.conf for nginx" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create default.conf for nginx" />
+    <MESSAGE value="Create docker-compose.yml" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create docker-compose.yml" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="645" y="351" width="620" height="369" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1769287501647">
+      <screen x="0" y="32" width="1920" height="688" />
+    </state>
+    <state x="645" y="351" width="620" height="369" key="#com.intellij.fileTypes.FileTypeChooser/0.32.1920.688/1920.0.1360.768@0.32.1920.688" timestamp="1769287501647" />
     <state x="385" y="62" width="910" height="658" key="CommitChangelistDialog2" timestamp="1769284141688">
       <screen x="0" y="32" width="1920" height="688" />
     </state>
