@@ -1,3 +1,41 @@
+## Для сборки и запуска приложения в фоне выбираем команду:
+```bash
+docker-compose up -d --build
+```
+
+## Для запуска приложения выбираем команду:
+```bash
+docker-compose up
+```
+
+## После сборки нужно установить зависимости:
+```bash
+docker compose exec app composer install
+docker compose exec app php artisan key:generate
+docker compose exec app php artisan migrate
+```
+
+## Для очистки конфигурации и кэша:
+```bash
+docker compose exec app php artisan config:clear
+docker compose exec app php artisan cache:clear
+```
+
+## Далее устанавливаем в контейнер Sanctum:
+```bash
+docker compose exec app composer require laravel/sanctum
+```
+
+## Далее публикуем конфиг и миграции:
+```bash
+docker compose exec app php artisan vendor:publish --provider="Laravel\Sanctum\SanctumServiceProvider"
+```
+
+## Прогоняем миграции:
+```bash
+docker compose exec app php artisan migrate
+```
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
@@ -58,25 +96,3 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 
-## Для сборки и запуска приложения в фоне выбираем команду
-```bash
-docker-compose up -d --build
-```
-
-## Для запуска приложения выбираем команду
-```bash
-docker-compose up
-```
-
-## После сборки нужно установить зависимости
-```bash
-docker compose exec app composer install
-docker compose exec app php artisan key:generate
-docker compose exec app php artisan migrate
-```
-
-## Для очистки конфигурации и кэша
-```bash
-docker compose exec app php artisan config:clear
-docker compose exec app php artisan cache:clear
-```
