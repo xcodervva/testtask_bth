@@ -17,8 +17,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1f1356f4-1db3-4186-b378-aa21560ef2cd" name="Default Changelist" comment="Create docker-compose.yml">
+      <change afterPath="$PROJECT_DIR$/docker/vue/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.vscode/extensions.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/public/vite.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/App.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/vue.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/HelloWorld.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/main.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/tsconfig.app.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/tsconfig.node.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/vite.config.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -154,6 +171,7 @@
       <path value="$PROJECT_DIR$/src/vendor/league/commonmark" />
       <path value="$PROJECT_DIR$/src/vendor/league/flysystem-local" />
       <path value="$PROJECT_DIR$/src/vendor/laravel/sanctum" />
+      <path value="$PROJECT_DIR$/src/vendor/inertiajs/inertia-laravel" />
     </include_path>
   </component>
   <component name="ProjectId" id="38iWxKu7qWPFrSzc6rzB6qwgBHA" />
@@ -175,6 +193,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/frontend/node_modules/typescript/lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -192,6 +211,7 @@
       <updated>1769283118011</updated>
       <workItem from="1769283119335" duration="5039000" />
       <workItem from="1769428338981" duration="9567000" />
+      <workItem from="1769462304211" duration="5145000" />
     </task>
     <task id="LOCAL-00001" summary="Init project">
       <created>1769284237572</created>
@@ -291,13 +311,21 @@
       <screen x="0" y="32" width="1920" height="688" />
     </state>
     <state x="385" y="62" width="910" height="658" key="CommitChangelistDialog2/0.32.1920.688/1920.0.1360.768@0.32.1920.688" timestamp="1769284141688" />
-    <state x="727" y="95" width="455" height="625" key="RollbackChangesDialog" timestamp="1769448848862">
+    <state x="727" y="95" width="455" height="625" key="RollbackChangesDialog" timestamp="1769459457956">
       <screen x="0" y="32" width="1920" height="688" />
     </state>
-    <state x="727" y="95" width="455" height="625" key="RollbackChangesDialog/0.32.1920.688/1920.0.1360.768@0.32.1920.688" timestamp="1769448848862" />
+    <state x="727" y="95" width="455" height="625" key="RollbackChangesDialog/0.32.1920.688/1920.0.1360.768@0.32.1920.688" timestamp="1769459457956" />
     <state x="449" y="32" width="1012" height="688" key="SettingsEditor" timestamp="1769283466011">
       <screen x="0" y="32" width="1920" height="688" />
     </state>
     <state x="449" y="32" width="1012" height="688" key="SettingsEditor/0.32.1920.688/1920.0.1360.768@0.32.1920.688" timestamp="1769283466011" />
+    <state x="792" y="500" width="325" height="144" key="VCS.ChangelistChooser" timestamp="1769459452699">
+      <screen x="0" y="32" width="1920" height="688" />
+    </state>
+    <state x="792" y="500" width="325" height="144" key="VCS.ChangelistChooser/0.32.1920.688/1920.0.1360.768@0.32.1920.688" timestamp="1769459452699" />
+    <state x="685" y="489" width="540" height="167" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1769462438551">
+      <screen x="0" y="32" width="1920" height="688" />
+    </state>
+    <state x="685" y="489" width="540" height="167" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.32.1920.688/1920.0.1360.768@0.32.1920.688" timestamp="1769462438551" />
   </component>
 </project>
