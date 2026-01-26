@@ -23,57 +23,62 @@ docker compose exec app php artisan cache:clear
 
 ## Далее устанавливаем в контейнер Sanctum:
 ```bash
-docker compose exec app composer require laravel/sanctum
+docker compose exec -u $(id -u):$(id -g) app composer require laravel/sanctum
 ```
 
 ## Далее публикуем конфиг и миграции:
 ```bash
-docker compose exec app php artisan vendor:publish --provider="Laravel\Sanctum\SanctumServiceProvider"
+docker compose exec -u $(id -u):$(id -g) app php artisan vendor:publish --provider="Laravel\Sanctum\SanctumServiceProvider"
 ```
 
 ## Прогоняем миграции:
 ```bash
-docker compose exec app php artisan migrate
+docker compose exec -u $(id -u):$(id -g) app php artisan migrate
 ```
 
 ## Создаём модель и миграцию для Category:
 ```bash
-docker compose exec app php artisan make:model Category -m
+docker compose exec -u $(id -u):$(id -g) app php artisan make:model Category -m
 ```
 
 ## Создаём модель и миграцию для Product:
 ```bash
-docker compose exec app php artisan make:model Product -m
+docker compose exec -u $(id -u):$(id -g) app php artisan make:model Product -m
 ```
 
 ## Запускаем сиды:
 ```bash
-docker compose exec app php artisan db:seed
+docker compose exec -u $(id -u):$(id -g) app php artisan db:seed
 ```
 
 ## Создаём API Resource:
 ```bash
-docker compose exec app php artisan make:resource CategoryResource
+docker compose exec -u $(id -u):$(id -g) app php artisan make:resource CategoryResource
 ```
 
 ## Создаём контроллер CategoryController:
 ```bash
-docker compose exec app php artisan make:controller Api/CategoryController
+docker compose exec -u $(id -u):$(id -g) app php artisan make:controller Api/CategoryController
 ```
 
 ## Создаём ProductResource:
 ```bash
-docker compose exec app php artisan make:resource ProductResource
+docker compose exec -u $(id -u):$(id -g) app php artisan make:resource ProductResource
 ```
 
 ## Создаём ProductController:
 ```bash
-docker compose exec app php artisan make:controller Api/ProductController
+docker compose exec -u $(id -u):$(id -g) app php artisan make:controller Api/ProductController
 ```
 
 ## Создаём товар:
 ```bash
-docker compose exec app php artisan make:request StoreProductRequest
+docker compose exec -u $(id -u):$(id -g) app php artisan make:request StoreProductRequest
+```
+
+## Обновление товара:
+```bash
+docker compose exec -u $(id -u):$(id -g) app php artisan make:request UpdateProductRequest
 ```
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>

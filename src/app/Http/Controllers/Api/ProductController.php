@@ -3,8 +3,11 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\StoreProductRequest;
+use App\Http\Requests\UpdateProductRequest;
 use App\Http\Resources\ProductResource;
 use App\Models\Product;
+use http\Client\Response;
 use Illuminate\Http\Request;
 
 class ProductController extends Controller
@@ -41,5 +44,53 @@ class ProductController extends Controller
         }
 
         return new ProductResource($product);
+    }
+
+    /**
+     * POST /api/products
+     */
+    public function store(StoreProductRequest $request)
+    {
+        $product = Product::create($request->validated());
+
+        return new ProductResource(
+            $product->load('category')
+        );
+    }
+
+    /**
+     * PUT/PATCH /api/products/{id}
+     */
+    public function update(UpdateProductRequest $request, int $id)
+    {
+        $product = Product::find($id);
+
+        if (!$product) {
+            return response()->json([
+                'message' => 'Product not found'
+            ], 404);
+        }
+
+        $product->update($request->validate());
+
+        return new ProductResource(
+            $product->load('category')
+        );
+    }
+
+    /**
+     * DELETE /api/products/{id}
+     */
+    public function destroy(int $id)
+    {
+        $product = Product::find($id);
+
+        if (!$product) {
+            return response()->json([
+                'message' => 'Product not found',
+            ], 404);
+        }
+
+        return response()->json(null, Response::HTTP_NO_CONTENT);
     }
 }
