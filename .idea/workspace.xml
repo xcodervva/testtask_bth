@@ -17,25 +17,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1f1356f4-1db3-4186-b378-aa21560ef2cd" name="Default Changelist" comment="Create docker-compose.yml">
-      <change afterPath="$PROJECT_DIR$/docker/vue/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/.vscode/extensions.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/public/vite.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/App.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/vue.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/HelloWorld.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/main.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/tsconfig.app.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/tsconfig.node.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/vite.config.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -211,7 +196,8 @@
       <updated>1769283118011</updated>
       <workItem from="1769283119335" duration="5039000" />
       <workItem from="1769428338981" duration="9567000" />
-      <workItem from="1769462304211" duration="5145000" />
+      <workItem from="1769462304211" duration="5219000" />
+      <workItem from="1769509506538" duration="1630000" />
     </task>
     <task id="LOCAL-00001" summary="Init project">
       <created>1769284237572</created>
@@ -262,7 +248,14 @@
       <option name="project" value="LOCAL" />
       <updated>1769448247946</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Create frontend folder and add Dockerfile for it">
+      <created>1769470120448</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1769470120448</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -300,7 +293,8 @@
     <MESSAGE value="Add public products api with pagination and filtering" />
     <MESSAGE value="Add StoreProductRequest" />
     <MESSAGE value="Update ProductController with store and destroy methods" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update ProductController with store and destroy methods" />
+    <MESSAGE value="Create frontend folder and add Dockerfile for it" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create frontend folder and add Dockerfile for it" />
   </component>
   <component name="WindowStateProjectService">
     <state x="645" y="351" width="620" height="369" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1769287501647">
