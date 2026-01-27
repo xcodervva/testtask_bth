@@ -17,10 +17,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1f1356f4-1db3-4186-b378-aa21560ef2cd" name="Default Changelist" comment="Create docker-compose.yml">
-      <change afterPath="$PROJECT_DIR$/frontend/src/stores/counter.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/composables/useAuthApi.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/lib/axios.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/HelloWorld.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/HelloWorld.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/vite.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/vite.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +36,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="composer.json" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -197,7 +199,7 @@
       <workItem from="1769283119335" duration="5039000" />
       <workItem from="1769428338981" duration="9567000" />
       <workItem from="1769462304211" duration="5219000" />
-      <workItem from="1769509506538" duration="3302000" />
+      <workItem from="1769509506538" duration="8330000" />
     </task>
     <task id="LOCAL-00001" summary="Init project">
       <created>1769284237572</created>
@@ -269,7 +271,21 @@
       <option name="project" value="LOCAL" />
       <updated>1769516677665</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Test work pinia on simple counter example">
+      <created>1769517148352</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1769517148352</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Add auth.ts type">
+      <created>1769532748778</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1769532748778</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -310,7 +326,9 @@
     <MESSAGE value="Create frontend folder and add Dockerfile for it" />
     <MESSAGE value="Add Element Plus to frontend" />
     <MESSAGE value="Add Pinia to frontend" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Pinia to frontend" />
+    <MESSAGE value="Test work pinia on simple counter example" />
+    <MESSAGE value="Add auth.ts type" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add auth.ts type" />
   </component>
   <component name="WindowStateProjectService">
     <state x="645" y="351" width="620" height="369" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1769287501647">

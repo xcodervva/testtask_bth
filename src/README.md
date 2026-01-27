@@ -1,11 +1,11 @@
 ## Для сборки и запуска приложения в фоне выбираем команду:
 ```bash
-docker-compose up -d --build
+docker compose up -d --build
 ```
 
 ## Для запуска приложения выбираем команду:
 ```bash
-docker-compose up
+docker compose up
 ```
 
 ## После сборки нужно установить зависимости:
