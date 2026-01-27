@@ -1,17 +1,17 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+import { useCounterStore } from '@/stores/counter';
 
-defineProps<{ msg: string }>()
-
-const count = ref(0)
+const counter = useCounterStore();
 </script>
 
 <template>
   <el-card style="max-width: 500px; margin: 40px auto">
     <h2>Element Plus работает ✅</h2>
 
-    <el-button type="primary">
-      Кнопка Element Plus
+    <p>Значение: {{ counter.count }}</p>
+
+    <el-button type="primary" @click="counter.increment">
+      +
     </el-button>
   </el-card>
 </template>
