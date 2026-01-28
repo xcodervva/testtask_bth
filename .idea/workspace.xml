@@ -17,11 +17,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1f1356f4-1db3-4186-b378-aa21560ef2cd" name="Default Changelist" comment="Create docker-compose.yml">
-      <change afterPath="$PROJECT_DIR$/frontend/src/composables/useAuthApi.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/lib/axios.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/Login.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/stores/auth.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/stores/auth.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/stores/counter.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/seeders/DatabaseSeeder.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -199,7 +200,8 @@
       <workItem from="1769283119335" duration="5039000" />
       <workItem from="1769428338981" duration="9567000" />
       <workItem from="1769462304211" duration="5219000" />
-      <workItem from="1769509506538" duration="8330000" />
+      <workItem from="1769509506538" duration="11265000" />
+      <workItem from="1769597803975" duration="5719000" />
     </task>
     <task id="LOCAL-00001" summary="Init project">
       <created>1769284237572</created>
@@ -285,7 +287,21 @@
       <option name="project" value="LOCAL" />
       <updated>1769532748778</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Add composables useAuthApi">
+      <created>1769537183954</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1769537183954</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Add auth.ts Pinia module">
+      <created>1769597916053</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1769597916054</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -328,9 +344,15 @@
     <MESSAGE value="Add Pinia to frontend" />
     <MESSAGE value="Test work pinia on simple counter example" />
     <MESSAGE value="Add auth.ts type" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add auth.ts type" />
+    <MESSAGE value="Add composables useAuthApi" />
+    <MESSAGE value="Add auth.ts Pinia module" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add auth.ts Pinia module" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="555" y="73" width="800" height="647" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1769603413621">
+      <screen x="0" y="32" width="1920" height="688" />
+    </state>
+    <state x="555" y="73" width="800" height="647" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.32.1920.688/1920.0.1360.768@0.32.1920.688" timestamp="1769603413621" />
     <state x="645" y="351" width="620" height="369" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1769287501647">
       <screen x="0" y="32" width="1920" height="688" />
     </state>

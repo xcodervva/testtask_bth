@@ -2,7 +2,7 @@ import { defineStore } from 'pinia';
 import { useAuthApi } from '@/composables/useAuthApi';
 import api from '@/lib/axios';
 
-import { AuthResponse, LoginCredentials, User } from "../types/auth";
+import type { AuthResponse, LoginCredentials, User } from "@/types/auth";
 
 export const useAuthStore = defineStore('auth', {
     state: () => ({
@@ -46,4 +46,4 @@ export const useAuthStore = defineStore('auth', {
             delete api.defaults.headers.common.Authorization;
         },
     },
-})
+});
