@@ -16,9 +16,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1f1356f4-1db3-4186-b378-aa21560ef2cd" name="Default Changelist" comment="Create docker-compose.yml">
-      <change afterPath="$PROJECT_DIR$/frontend/src/types/product.ts" afterDir="false" />
-    </list>
+    <list default="true" id="1f1356f4-1db3-4186-b378-aa21560ef2cd" name="Default Changelist" comment="Create docker-compose.yml" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -197,7 +195,7 @@
       <workItem from="1769462304211" duration="5219000" />
       <workItem from="1769509506538" duration="11265000" />
       <workItem from="1769597803975" duration="11346000" />
-      <workItem from="1769665443216" duration="2625000" />
+      <workItem from="1769665443216" duration="3018000" />
     </task>
     <task id="LOCAL-00001" summary="Init project">
       <created>1769284237572</created>
@@ -325,7 +323,21 @@
       <option name="project" value="LOCAL" />
       <updated>1769667745921</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Add type for product">
+      <created>1769668108975</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1769668108975</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Create useProductApi">
+      <created>1769668458972</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1769668458972</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -374,7 +386,9 @@
     <MESSAGE value="Create AuthController with login function" />
     <MESSAGE value="Update AuthController with logout function" />
     <MESSAGE value="Add validation rules for login form on Login.vue" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add validation rules for login form on Login.vue" />
+    <MESSAGE value="Add type for product" />
+    <MESSAGE value="Create useProductApi" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create useProductApi" />
   </component>
   <component name="WindowStateProjectService">
     <state x="555" y="73" width="800" height="647" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1769603413621">
