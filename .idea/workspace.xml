@@ -17,12 +17,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1f1356f4-1db3-4186-b378-aa21560ef2cd" name="Default Changelist" comment="Create docker-compose.yml">
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/Login.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/stores/auth.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/stores/auth.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/stores/counter.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/seeders/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/HelloWorld.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/Login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Login.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -201,7 +198,8 @@
       <workItem from="1769428338981" duration="9567000" />
       <workItem from="1769462304211" duration="5219000" />
       <workItem from="1769509506538" duration="11265000" />
-      <workItem from="1769597803975" duration="5719000" />
+      <workItem from="1769597803975" duration="11346000" />
+      <workItem from="1769665443216" duration="2295000" />
     </task>
     <task id="LOCAL-00001" summary="Init project">
       <created>1769284237572</created>
@@ -301,7 +299,28 @@
       <option name="project" value="LOCAL" />
       <updated>1769597916054</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Add Login vue component">
+      <created>1769604230638</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1769604230638</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Create AuthController with login function">
+      <created>1769616741097</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1769616741097</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Update AuthController with logout function">
+      <created>1769624168107</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1769624168107</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -346,7 +365,10 @@
     <MESSAGE value="Add auth.ts type" />
     <MESSAGE value="Add composables useAuthApi" />
     <MESSAGE value="Add auth.ts Pinia module" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add auth.ts Pinia module" />
+    <MESSAGE value="Add Login vue component" />
+    <MESSAGE value="Create AuthController with login function" />
+    <MESSAGE value="Update AuthController with logout function" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update AuthController with logout function" />
   </component>
   <component name="WindowStateProjectService">
     <state x="555" y="73" width="800" height="647" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1769603413621">
@@ -373,6 +395,10 @@
       <screen x="0" y="32" width="1920" height="688" />
     </state>
     <state x="792" y="500" width="325" height="144" key="VCS.ChangelistChooser/0.32.1920.688/1920.0.1360.768@0.32.1920.688" timestamp="1769459452699" />
+    <state x="624" y="260" key="run.anything.popup" timestamp="1769667307370">
+      <screen x="0" y="32" width="1920" height="688" />
+    </state>
+    <state x="624" y="260" key="run.anything.popup/0.32.1920.688/1920.0.1360.768@0.32.1920.688" timestamp="1769667307370" />
     <state x="685" y="489" width="540" height="167" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1769462438551">
       <screen x="0" y="32" width="1920" height="688" />
     </state>
