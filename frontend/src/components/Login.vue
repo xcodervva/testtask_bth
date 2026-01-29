@@ -2,10 +2,12 @@
 import { reactive, ref } from 'vue';
 import type { FormInstance, FormRules } from 'element-plus';
 
+import { useUserRouter } from '@/composables/useUserRouter';
 import { useAuthStore } from '@/stores/auth.ts';
 import type { LoginCredentials } from '@/types/auth';
 
 const auth = useAuthStore();
+const { goToProducts } = useUserRouter();
 
 const formRef = ref<FormInstance>();
 
@@ -54,6 +56,7 @@ const submit = async (): Promise<void> => {
     if (!valid) return;
 
     await auth.login(form);
+    goToProducts();
   });
 }
 </script>

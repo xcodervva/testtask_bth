@@ -16,11 +16,15 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1f1356f4-1db3-4186-b378-aa21560ef2cd" name="Default Changelist" comment="Create useCategoryApi">
-      <change afterPath="$PROJECT_DIR$/frontend/src/validation/product.schema.ts" afterDir="false" />
+    <list default="true" id="1f1356f4-1db3-4186-b378-aa21560ef2cd" name="Default Changelist" comment="Add zod validation schema for product">
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/admin/Products.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/router/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/Login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Login.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -200,7 +204,7 @@
       <workItem from="1769462304211" duration="5219000" />
       <workItem from="1769509506538" duration="11265000" />
       <workItem from="1769597803975" duration="11346000" />
-      <workItem from="1769665443216" duration="4466000" />
+      <workItem from="1769665443216" duration="8666000" />
     </task>
     <task id="LOCAL-00001" summary="Init project">
       <created>1769284237572</created>
@@ -349,7 +353,14 @@
       <option name="project" value="LOCAL" />
       <updated>1769668643598</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Add zod validation schema for product">
+      <created>1769670700870</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1769670700871</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -401,7 +412,8 @@
     <MESSAGE value="Add type for product" />
     <MESSAGE value="Create useProductApi" />
     <MESSAGE value="Create useCategoryApi" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create useCategoryApi" />
+    <MESSAGE value="Add zod validation schema for product" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add zod validation schema for product" />
   </component>
   <component name="WindowStateProjectService">
     <state x="555" y="73" width="800" height="647" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1769603413621">
