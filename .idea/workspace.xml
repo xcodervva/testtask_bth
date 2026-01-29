@@ -17,9 +17,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1f1356f4-1db3-4186-b378-aa21560ef2cd" name="Default Changelist" comment="Create docker-compose.yml">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/HelloWorld.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/Login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Login.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/types/product.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -199,7 +197,7 @@
       <workItem from="1769462304211" duration="5219000" />
       <workItem from="1769509506538" duration="11265000" />
       <workItem from="1769597803975" duration="11346000" />
-      <workItem from="1769665443216" duration="2295000" />
+      <workItem from="1769665443216" duration="2625000" />
     </task>
     <task id="LOCAL-00001" summary="Init project">
       <created>1769284237572</created>
@@ -320,7 +318,14 @@
       <option name="project" value="LOCAL" />
       <updated>1769624168107</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Add validation rules for login form on Login.vue">
+      <created>1769667745921</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1769667745921</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -368,7 +373,8 @@
     <MESSAGE value="Add Login vue component" />
     <MESSAGE value="Create AuthController with login function" />
     <MESSAGE value="Update AuthController with logout function" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update AuthController with logout function" />
+    <MESSAGE value="Add validation rules for login form on Login.vue" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add validation rules for login form on Login.vue" />
   </component>
   <component name="WindowStateProjectService">
     <state x="555" y="73" width="800" height="647" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1769603413621">
