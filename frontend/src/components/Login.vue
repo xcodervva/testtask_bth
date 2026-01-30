@@ -93,7 +93,7 @@ const submit = async (): Promise<void> => {
           :loading="auth.loading"
           block
       >
-        Войти
+        {{ loginTitles.enterBtn }}
       </el-button>
     </el-form>
   </el-card>

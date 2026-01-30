@@ -17,9 +17,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1f1356f4-1db3-4186-b378-aa21560ef2cd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/admin/ProductForm.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/router/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/router/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/tsconfig.app.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/tsconfig.app.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/admin/ProductCreate.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/admin/ProductCreate.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/admin/Products.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/admin/Products.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/composables/useCategoryApi.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/composables/useCategoryApi.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/lib/axios.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/lib/axios.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -201,7 +204,7 @@
       <workItem from="1769597803975" duration="11346000" />
       <workItem from="1769665443216" duration="15239000" />
       <workItem from="1769752790724" duration="84000" />
-      <workItem from="1769752886671" duration="1397000" />
+      <workItem from="1769752886671" duration="9855000" />
     </task>
     <task id="LOCAL-00001" summary="Init project">
       <created>1769284237572</created>
@@ -371,7 +374,14 @@
       <option name="project" value="LOCAL" />
       <updated>1769752998871</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Add ProductCreate component">
+      <created>1769754595418</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1769754595418</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -402,7 +412,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Init project" />
     <MESSAGE value="Create Dockerfile for php" />
     <MESSAGE value="Create default.conf for nginx" />
     <MESSAGE value="Create docker-compose.yml" />
@@ -426,7 +435,9 @@
     <MESSAGE value="Add zod validation schema for product" />
     <MESSAGE value="Add vue-router. Temp commit" />
     <MESSAGE value="Add AdminLayout for auth routes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add AdminLayout for auth routes" />
+    <MESSAGE value="Add ProductForm component" />
+    <MESSAGE value="Add ProductCreate component" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add ProductCreate component" />
   </component>
   <component name="WindowStateProjectService">
     <state x="555" y="73" width="800" height="647" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1769603413621">
@@ -441,6 +452,10 @@
       <screen x="0" y="32" width="1920" height="688" />
     </state>
     <state x="385" y="62" width="910" height="658" key="CommitChangelistDialog2/0.32.1920.688/1920.0.1360.768@0.32.1920.688" timestamp="1769284141688" />
+    <state x="791" y="488" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog" timestamp="1769754755843">
+      <screen x="0" y="32" width="1920" height="688" />
+    </state>
+    <state x="791" y="488" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog/0.32.1920.688/1920.0.1360.768@0.32.1920.688" timestamp="1769754755843" />
     <state x="727" y="95" width="455" height="625" key="RollbackChangesDialog" timestamp="1769459457956">
       <screen x="0" y="32" width="1920" height="688" />
     </state>
@@ -453,6 +468,10 @@
       <screen x="0" y="32" width="1920" height="688" />
     </state>
     <state x="792" y="500" width="325" height="144" key="VCS.ChangelistChooser/0.32.1920.688/1920.0.1360.768@0.32.1920.688" timestamp="1769459452699" />
+    <state x="654" y="32" width="612" height="688" key="find.popup" timestamp="1769765766123">
+      <screen x="0" y="32" width="1920" height="688" />
+    </state>
+    <state x="654" y="32" width="612" height="688" key="find.popup/0.32.1920.688/1920.0.1360.768@0.32.1920.688" timestamp="1769765766123" />
     <state x="624" y="260" key="run.anything.popup" timestamp="1769667307370">
       <screen x="0" y="32" width="1920" height="688" />
     </state>

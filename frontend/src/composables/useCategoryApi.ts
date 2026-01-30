@@ -3,7 +3,7 @@ import type { Category } from '@/types/product';
 
 export function useCategoryApi() {
     const getCategories = async () => {
-        const { data } = await api.get<Category[]>('/categories');
+        const { data: { data } } = await api.get<Category[]>('/categories');
 
         return data;
     }

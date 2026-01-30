@@ -54,7 +54,11 @@ onMounted(load);
         {{ productsTitle.addItem }}
       </el-button>
 
-      <el-table :data="products" v-loading="loading" style="margin-top: 16px">
+      <el-table
+          height="400"
+          :data="products"
+          v-loading="loading"
+          style="margin-top: 16px">
         <el-table-column prop="name" :label="productsTitle.name"/>
         <el-table-column prop="category.name" :label="productsTitle.category"/>
         <el-table-column prop="price" :label="productsTitle.price" width="120" />
