@@ -5,5 +5,8 @@
   <router-view />
 </template>
 
-<style>
+<style lang="css">
+.el-button {
+  outline: none !important;
+}
 </style>
