@@ -3,6 +3,7 @@ import { useAuthStore } from '@/stores/auth';
 
 import Login from '@/components/Login.vue';
 import Products from '@/components/admin/Products.vue';
+import ProductCreate from '@/components/admin/ProductCreate.vue';
 
 const routes = [
     {
@@ -17,12 +18,12 @@ const routes = [
         component: Products,
         meta: { requiresAuth: true },
     },
-    // {
-    //     path: '/admin/products/create',
-    //     name: 'products.create',
-    //     component: ProductCreate,
-    //     meta: { requiresAuth: true },
-    // },
+    {
+        path: '/admin/products/create',
+        name: 'products.create',
+        component: ProductCreate,
+        meta: { requiresAuth: true },
+    },
     // {
     //     path: '/admin/products/:id/edit',
     //     name: 'products.edit',
