@@ -17,12 +17,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1f1356f4-1db3-4186-b378-aa21560ef2cd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/frontend/src/stores/product.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/composables/useWithLoader.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/components/admin/Products.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/admin/Products.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/composables/useProductApi.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/composables/useProductApi.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/composables/useUserRouter.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/composables/useUserRouter.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/router/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/router/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/stores/product.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/stores/product.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -205,7 +205,7 @@
       <workItem from="1769665443216" duration="15239000" />
       <workItem from="1769752790724" duration="84000" />
       <workItem from="1769752886671" duration="11263000" />
-      <workItem from="1769839035725" duration="7944000" />
+      <workItem from="1769839035725" duration="11296000" />
     </task>
     <task id="LOCAL-00001" summary="Init project">
       <created>1769284237572</created>
@@ -389,7 +389,14 @@
       <option name="project" value="LOCAL" />
       <updated>1769768675465</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Set up preloaders">
+      <created>1769853684878</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1769853684878</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -420,7 +427,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Create Dockerfile for php" />
     <MESSAGE value="Create default.conf for nginx" />
     <MESSAGE value="Create docker-compose.yml" />
     <MESSAGE value="Add public products api with pagination and filtering" />
@@ -445,7 +451,8 @@
     <MESSAGE value="Add AdminLayout for auth routes" />
     <MESSAGE value="Add ProductForm component" />
     <MESSAGE value="Add ProductCreate component" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add ProductCreate component" />
+    <MESSAGE value="Set up preloaders" />
+    <option name="LAST_COMMIT_MESSAGE" value="Set up preloaders" />
   </component>
   <component name="WindowStateProjectService">
     <state x="555" y="73" width="800" height="647" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1769603413621">

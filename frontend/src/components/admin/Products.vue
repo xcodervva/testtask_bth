@@ -11,7 +11,7 @@ import type { Product } from '@/types/product';
 const api = useProductApi();
 const productStore = useProductStore();
 const { initialized, loading, page, products, total } = storeToRefs(productStore);
-const { goToProductCreate, goToProductEdit } = useUserRouter();
+const { goToProductCreate, goToProductEdit, routingLoading } = useUserRouter();
 
 const productsTitle = {
   addItem: 'Добавить товар',
@@ -20,6 +20,9 @@ const productsTitle = {
   price: 'Цена',
   edit: 'Редактировать',
   delete_item_appr: 'Удалить товар?',
+  delete_yes: 'Да',
+  delete_no: 'Нет',
+  delete: 'Удалить',
   actions: 'Действия',
 };
 
@@ -27,7 +30,7 @@ const remove = async (id: number) => {
   await api.deleteProduct(id);
 };
 
-const addItem = () => {
+const addItem = async () => {
   goToProductCreate();
 };
 
@@ -43,7 +46,7 @@ onMounted(async () => {
 <template>
   <AdminLayout>
     <el-card style="width: 800px;">
-      <el-button type="primary" @click="addItem">
+      <el-button type="primary" @click="addItem" :loading="routingLoading">
         {{ productsTitle.addItem }}
       </el-button>
 
@@ -68,15 +71,18 @@ onMounted(async () => {
             </el-button>
 
             <el-popconfirm
+                class="confirm-modal"
                 :title="productsTitle.delete_item_appr"
                 @confirm="remove(row.id)"
+                confirm-button-text="Да"
+                cancel-button-text="Нет"
             >
               <template #reference>
                 <el-button
                     style="margin-left: 0px;"
                     size="small"
                     type="danger">
-                  Удалить
+                  {{ productsTitle.delete }}
                 </el-button>
               </template>
             </el-popconfirm>
@@ -93,3 +99,9 @@ onMounted(async () => {
     </el-card>
   </AdminLayout>
 </template>
+
+<style lang="css">
+.el-popconfirm__action {
+  text-align: center;
+}
+</style>
