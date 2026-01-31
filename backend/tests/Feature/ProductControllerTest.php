@@ -13,6 +13,7 @@ class ProductControllerTest extends TestCase
 {
     use RefreshDatabase;
 
+    /** @test */
     public function it_returns_paginated_products_list()
     {
         $category = Category::factory()->create();
@@ -38,6 +39,25 @@ class ProductControllerTest extends TestCase
                 ],
                 'links',
                 'meta',
+            ]);
+    }
+
+    /** @test */
+    public function it_returns_single_product()
+    {
+        $product = Product::factory()
+            ->for(Category::factory())
+            ->create();
+
+        $response = $this->getJson("/api/products/{$product->id}");
+
+        $response
+            ->assertOk()
+            ->assertJson([
+                'data' => [
+                    'id' => $product->id,
+                    'name' => $product->name,
+                ],
             ]);
     }
 }
