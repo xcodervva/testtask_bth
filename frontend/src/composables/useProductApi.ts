@@ -3,11 +3,11 @@ import type { Product, Paginated, ProductPayload } from '@/types/product';
 
 export function useProductApi() {
     const getProducts = async (page = 1) => {
-        const { data } = await api.get<Paginated<Product>>(
+        const response = await api.get<Paginated<Product>>(
             `/products?page=${page}`
         );
 
-        return data;
+        return response;
     }
 
     const getProduct = async (id: number) => {

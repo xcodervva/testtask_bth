@@ -1,18 +1,18 @@
 <script setup lang="ts">
 import {ref, onMounted} from 'vue';
+import { storeToRefs } from "pinia";
 
 import AdminLayout from '@/layouts/AdminLayout.vue';
-import {useUserRouter} from '@/composables/useUserRouter';
-import {useProductApi} from '@/composables/useProductApi';
-import type {Product} from '@/types/product';
+import { useUserRouter } from '@/composables/useUserRouter';
+import { useProductApi } from '@/composables/useProductApi';
+import { useProductStore } from '@/stores/product';
+import type { Product } from '@/types/product';
 
 const api = useProductApi();
+const productStore = useProductStore();
+const { initialized, loading, page, products, total } = storeToRefs(productStore);
 const { goToProductCreate, goToProductEdit } = useUserRouter();
 
-const products = ref<Product[]>([]);
-const page = ref(1);
-const total = ref(0);
-const loading = ref(false);
 const productsTitle = {
   addItem: 'Добавить товар',
   name: 'Название',
@@ -23,17 +23,8 @@ const productsTitle = {
   actions: 'Действия',
 };
 
-const load = async () => {
-  loading.value = true;
-  const res = await api.getProducts(page.value);
-  products.value = res.data;
-  total.value = res.meta.total;
-  loading.value = false;
-};
-
 const remove = async (id: number) => {
   await api.deleteProduct(id);
-  await load();
 };
 
 const addItem = () => {
@@ -44,7 +35,9 @@ const editItem = () => {
   goToProductEdit();
 };
 
-onMounted(load);
+onMounted(async () => {
+  await productStore.fetchProducts();
+});
 </script>
 
 <template>
@@ -58,6 +51,7 @@ onMounted(load);
           height="400"
           :data="products"
           v-loading="loading"
+          v-if="initialized"
           style="margin-top: 16px">
         <el-table-column prop="name" :label="productsTitle.name"/>
         <el-table-column prop="category.name" :label="productsTitle.category"/>
@@ -89,6 +83,13 @@ onMounted(load);
           </template>
         </el-table-column>
       </el-table>
+
+      <el-skeleton
+          height="400"
+          v-else
+          animated
+          :rows="5"
+      />
     </el-card>
   </AdminLayout>
 </template>
