@@ -38,15 +38,18 @@ export const useProductStore = defineStore('product', () => {
     };
 
     const createProduct = async (payload: ProductPayload) => {
-        await withLoader(() => productApi.create(payload));
+        await withLoader(() => productApi.createProduct(payload));
     };
 
     const updateProduct = async (id: number, payload: ProductPayload) => {
-        await withLoader(() => productApi.update(id, payload));
+        await withLoader(() => productApi.updateProduct(id, payload));
     };
 
     const deleteProduct = async (id: number) => {
-        await withLoader(() => productApi.delete(id));
+        await withLoader(() => {
+            productApi.deleteProduct(id);
+            fetchProducts();
+        });
     };
 
     return {

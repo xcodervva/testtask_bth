@@ -7,7 +7,6 @@ use App\Http\Requests\StoreProductRequest;
 use App\Http\Requests\UpdateProductRequest;
 use App\Http\Resources\ProductResource;
 use App\Models\Product;
-use http\Client\Response;
 use Illuminate\Http\Request;
 
 class ProductController extends Controller
@@ -91,6 +90,8 @@ class ProductController extends Controller
             ], 404);
         }
 
-        return response()->json(null, Response::HTTP_NO_CONTENT);
+        $product->delete();
+
+        return response()->noContent();
     }
 }

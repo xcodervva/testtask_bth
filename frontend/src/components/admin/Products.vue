@@ -27,7 +27,7 @@ const productsTitle = {
 };
 
 const remove = async (id: number) => {
-  await api.deleteProduct(id);
+  await productStore.deleteProduct(id);
 };
 
 const addItem = async () => {
