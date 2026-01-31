@@ -17,9 +17,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1f1356f4-1db3-4186-b378-aa21560ef2cd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/backend/database/factories/ProductFactory.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/database/factories/CategoryFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/database/factories/CategoryFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/tests/Feature/ProductControllerTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/tests/Feature/ProductControllerTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -203,7 +202,7 @@
       <workItem from="1769752790724" duration="84000" />
       <workItem from="1769752886671" duration="11263000" />
       <workItem from="1769839035725" duration="20613000" />
-      <workItem from="1769891592353" duration="3078000" />
+      <workItem from="1769891592353" duration="4654000" />
     </task>
     <task id="LOCAL-00001" summary="Init project">
       <created>1769284237572</created>
@@ -429,7 +428,14 @@
       <option name="project" value="LOCAL" />
       <updated>1769893707494</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="Add ProductFactory">
+      <created>1769894985888</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1769894985888</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -460,7 +466,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Create frontend folder and add Dockerfile for it" />
     <MESSAGE value="Add Element Plus to frontend" />
     <MESSAGE value="Add Pinia to frontend" />
     <MESSAGE value="Test work pinia on simple counter example" />
@@ -485,7 +490,8 @@
     <MESSAGE value="Rename src -&gt; backend" />
     <MESSAGE value="Create ProductControllerTest" />
     <MESSAGE value="Add CategoryFactory" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add CategoryFactory" />
+    <MESSAGE value="Add ProductFactory" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add ProductFactory" />
   </component>
   <component name="WindowStateProjectService">
     <state x="555" y="73" width="800" height="647" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1769603413621">
