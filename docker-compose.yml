@@ -5,7 +5,7 @@ services:
       dockerfile: docker/php/Dockerfile
     container_name: laravel_app
     volumes:
-      - ./src:/var/www
+      - ./backend:/var/www
     entrypoint: >
       sh -c "chown -R www-data:www-data /var/www/storage /var/www/bootstrap/cache && php-fpm"
     depends_on:
@@ -17,7 +17,7 @@ services:
     ports:
       - "8000:80"
     volumes:
-      - ./src:/var/www
+      - ./backend:/var/www
       - ./docker/nginx/default.conf:/etc/nginx/conf.d/default.conf
     depends_on:
       - app
