@@ -202,7 +202,7 @@
       <workItem from="1769752886671" duration="11263000" />
       <workItem from="1769839035725" duration="20613000" />
       <workItem from="1769891592353" duration="5046000" />
-      <workItem from="1769946078433" duration="1789000" />
+      <workItem from="1769946078433" duration="2661000" />
     </task>
     <task id="LOCAL-00001" summary="Init project">
       <created>1769284237572</created>
@@ -449,7 +449,14 @@
       <option name="project" value="LOCAL" />
       <updated>1769947180606</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="Fix authenticated_user_can_delete_product test method">
+      <created>1769948200794</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1769948200794</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -480,7 +487,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Test work pinia on simple counter example" />
     <MESSAGE value="Add auth.ts type" />
     <MESSAGE value="Add composables useAuthApi" />
     <MESSAGE value="Add auth.ts Pinia module" />
@@ -505,7 +511,8 @@
     <MESSAGE value="Add ProductFactory" />
     <MESSAGE value="Update ProductControllerTest" />
     <MESSAGE value="Fix authenticated_user_can_update_product test method" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix authenticated_user_can_update_product test method" />
+    <MESSAGE value="Fix authenticated_user_can_delete_product test method" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix authenticated_user_can_delete_product test method" />
   </component>
   <component name="WindowStateProjectService">
     <state x="555" y="73" width="800" height="647" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1769603413621">
