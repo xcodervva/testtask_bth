@@ -70,4 +70,23 @@ class AuthControllerTest extends TestCase
             ->assertStatus(422)
             ->assertJsonValidationErrors(['email', 'password']);
     }
+
+    #[Test]
+    public function authenticated_user_can_logout(): void
+    {
+        $user = User::factory()->create();
+
+        $token = $user->createToken('test-token')->plainTextToken;
+
+        $response = $this->withHeader('Authorization', 'Bearer ' . $token)
+            ->postJson('/api/logout');
+
+        $response
+            ->assertOk()
+            ->assertJson([
+                'message' => 'Logged out',
+            ]);
+
+        $this->assertDatabaseCount('personal_access_tokens', 0);
+    }
 }
