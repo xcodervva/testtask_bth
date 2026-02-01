@@ -36,4 +36,26 @@ class AuthControllerTest extends TestCase
 
         $this->assertDatabaseCount('personal_access_tokens', 1);
     }
+
+    #[Test]
+    public function login_fails_with_invalid_credentials(): void
+    {
+        User::factory()->create([
+            'email' => 'admin@test.com',
+            'password' => Hash::make('correct-password'),
+        ]);
+
+        $response = $this->postJson('/api/login', [
+            'email' => 'admin@test.com',
+            'password' => 'wrong-password',
+        ]);
+
+        $response
+            ->assertStatus(401)
+            ->assertJson([
+                'message' => 'Invalid credentials',
+            ]);
+
+        $this->assertDatabaseCount('personal_access_tokens', 0);
+    }
 }
