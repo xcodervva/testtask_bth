@@ -58,4 +58,16 @@ class AuthControllerTest extends TestCase
 
         $this->assertDatabaseCount('personal_access_tokens', 0);
     }
+
+    #[Test]
+    public function login_fails_with_invalid_payload(): void
+    {
+        $response = $this->postJson('/api/login', [
+            'email' => 'not-an-email',
+        ]);
+
+        $response
+            ->assertStatus(422)
+            ->assertJsonValidationErrors(['email', 'password']);
+    }
 }

@@ -17,10 +17,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1f1356f4-1db3-4186-b378-aa21560ef2cd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/backend/tests/Feature/AuthControllerTest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/routes/api.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/tests/Unit/ExampleTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/tests/Feature/AuthControllerTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/tests/Feature/AuthControllerTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -205,7 +203,7 @@
       <workItem from="1769752886671" duration="11263000" />
       <workItem from="1769839035725" duration="20613000" />
       <workItem from="1769891592353" duration="5046000" />
-      <workItem from="1769946078433" duration="5869000" />
+      <workItem from="1769946078433" duration="6520000" />
     </task>
     <task id="LOCAL-00001" summary="Init project">
       <created>1769284237572</created>
@@ -466,7 +464,21 @@
       <option name="project" value="LOCAL" />
       <updated>1769949129558</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="Create AuthControllerTest">
+      <created>1769952668132</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1769952668132</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Add login_fails_with_invalid_credentials to AuthControllerTest">
+      <created>1769953012843</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1769953012843</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -497,8 +509,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add composables useAuthApi" />
-    <MESSAGE value="Add auth.ts Pinia module" />
     <MESSAGE value="Add Login vue component" />
     <MESSAGE value="Create AuthController with login function" />
     <MESSAGE value="Update AuthController with logout function" />
@@ -522,7 +532,9 @@
     <MESSAGE value="Fix authenticated_user_can_update_product test method" />
     <MESSAGE value="Fix authenticated_user_can_delete_product test method" />
     <MESSAGE value="Add CategoryControllerTest" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add CategoryControllerTest" />
+    <MESSAGE value="Create AuthControllerTest" />
+    <MESSAGE value="Add login_fails_with_invalid_credentials to AuthControllerTest" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add login_fails_with_invalid_credentials to AuthControllerTest" />
   </component>
   <component name="WindowStateProjectService">
     <state x="555" y="73" width="800" height="647" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1769603413621">
