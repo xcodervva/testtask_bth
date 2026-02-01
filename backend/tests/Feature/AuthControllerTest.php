@@ -89,4 +89,12 @@ class AuthControllerTest extends TestCase
 
         $this->assertDatabaseCount('personal_access_tokens', 0);
     }
+
+    #[Test]
+    public function guest_cannot_logout(): void
+    {
+        $response = $this->postJson('/api/logout');
+
+        $response->assertStatus(401);
+    }
 }

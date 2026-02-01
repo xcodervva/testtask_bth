@@ -203,7 +203,7 @@
       <workItem from="1769752886671" duration="11263000" />
       <workItem from="1769839035725" duration="20613000" />
       <workItem from="1769891592353" duration="5046000" />
-      <workItem from="1769946078433" duration="6520000" />
+      <workItem from="1769946078433" duration="7237000" />
     </task>
     <task id="LOCAL-00001" summary="Init project">
       <created>1769284237572</created>
@@ -478,7 +478,21 @@
       <option name="project" value="LOCAL" />
       <updated>1769953012843</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="Add login_fails_with_invalid_payload to AuthControllerTest">
+      <created>1769953323914</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1769953323914</updated>
+    </task>
+    <task id="LOCAL-00041" summary="Add authenticated_user_can_logout to AuthControllerTest">
+      <created>1769953704673</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1769953704673</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -509,8 +523,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add Login vue component" />
-    <MESSAGE value="Create AuthController with login function" />
     <MESSAGE value="Update AuthController with logout function" />
     <MESSAGE value="Add validation rules for login form on Login.vue" />
     <MESSAGE value="Add type for product" />
@@ -534,7 +546,9 @@
     <MESSAGE value="Add CategoryControllerTest" />
     <MESSAGE value="Create AuthControllerTest" />
     <MESSAGE value="Add login_fails_with_invalid_credentials to AuthControllerTest" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add login_fails_with_invalid_credentials to AuthControllerTest" />
+    <MESSAGE value="Add login_fails_with_invalid_payload to AuthControllerTest" />
+    <MESSAGE value="Add authenticated_user_can_logout to AuthControllerTest" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add authenticated_user_can_logout to AuthControllerTest" />
   </component>
   <component name="WindowStateProjectService">
     <state x="555" y="73" width="800" height="647" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1769603413621">
