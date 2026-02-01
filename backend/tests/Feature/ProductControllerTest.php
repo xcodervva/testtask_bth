@@ -152,7 +152,7 @@ class ProductControllerTest extends TestCase
 
         $response->assertNoContent();
 
-        $this->assertDatabaseMissing('products', [
+        $this->assertSoftDeleted('products', [
             'id' => $product->id,
         ]);
     }
