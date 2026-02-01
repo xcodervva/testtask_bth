@@ -70,7 +70,7 @@ class ProductController extends Controller
             ], 404);
         }
 
-        $product->update($request->validate());
+        $product->update($request->validated());
 
         return new ProductResource(
             $product->load('category')

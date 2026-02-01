@@ -18,6 +18,8 @@
   <component name="ChangeListManager">
     <list default="true" id="1f1356f4-1db3-4186-b378-aa21560ef2cd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/Http/Controllers/Api/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/Http/Controllers/Api/ProductController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/tests/Feature/ExampleTest.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/tests/Feature/ProductControllerTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/tests/Feature/ProductControllerTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -202,7 +204,8 @@
       <workItem from="1769752790724" duration="84000" />
       <workItem from="1769752886671" duration="11263000" />
       <workItem from="1769839035725" duration="20613000" />
-      <workItem from="1769891592353" duration="4654000" />
+      <workItem from="1769891592353" duration="5046000" />
+      <workItem from="1769946078433" duration="1065000" />
     </task>
     <task id="LOCAL-00001" summary="Init project">
       <created>1769284237572</created>
@@ -435,7 +438,14 @@
       <option name="project" value="LOCAL" />
       <updated>1769894985888</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="Update ProductControllerTest">
+      <created>1769896261949</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1769896261949</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -466,7 +476,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add Element Plus to frontend" />
     <MESSAGE value="Add Pinia to frontend" />
     <MESSAGE value="Test work pinia on simple counter example" />
     <MESSAGE value="Add auth.ts type" />
@@ -491,7 +500,8 @@
     <MESSAGE value="Create ProductControllerTest" />
     <MESSAGE value="Add CategoryFactory" />
     <MESSAGE value="Add ProductFactory" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add ProductFactory" />
+    <MESSAGE value="Update ProductControllerTest" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update ProductControllerTest" />
   </component>
   <component name="WindowStateProjectService">
     <state x="555" y="73" width="800" height="647" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1769603413621">
@@ -502,6 +512,10 @@
       <screen x="0" y="32" width="1920" height="688" />
     </state>
     <state x="645" y="351" width="620" height="369" key="#com.intellij.fileTypes.FileTypeChooser/0.32.1920.688/1920.0.1360.768@0.32.1920.688" timestamp="1769287501647" />
+    <state x="693" y="247" width="524" height="473" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1769896334494">
+      <screen x="0" y="32" width="1920" height="688" />
+    </state>
+    <state x="693" y="247" width="524" height="473" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.32.1920.688/1920.0.1360.768@0.32.1920.688" timestamp="1769896334494" />
     <state x="385" y="62" width="910" height="658" key="CommitChangelistDialog2" timestamp="1769284141688">
       <screen x="0" y="32" width="1920" height="688" />
     </state>
@@ -522,6 +536,10 @@
       <screen x="0" y="32" width="1920" height="688" />
     </state>
     <state x="792" y="500" width="325" height="144" key="VCS.ChangelistChooser/0.32.1920.688/1920.0.1360.768@0.32.1920.688" timestamp="1769459452699" />
+    <state x="555" y="222" width="800" height="498" key="Vcs.Push.Dialog.v2" timestamp="1769896267209">
+      <screen x="0" y="32" width="1920" height="688" />
+    </state>
+    <state x="555" y="222" width="800" height="498" key="Vcs.Push.Dialog.v2/0.32.1920.688/1920.0.1360.768@0.32.1920.688" timestamp="1769896267209" />
     <state x="654" y="32" width="612" height="688" key="find.popup" timestamp="1769765766123">
       <screen x="0" y="32" width="1920" height="688" />
     </state>
