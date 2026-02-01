@@ -17,7 +17,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1f1356f4-1db3-4186-b378-aa21560ef2cd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/backend/tests/Feature/AuthControllerTest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/tests/Unit/ExampleTest.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -202,7 +205,7 @@
       <workItem from="1769752886671" duration="11263000" />
       <workItem from="1769839035725" duration="20613000" />
       <workItem from="1769891592353" duration="5046000" />
-      <workItem from="1769946078433" duration="2661000" />
+      <workItem from="1769946078433" duration="5869000" />
     </task>
     <task id="LOCAL-00001" summary="Init project">
       <created>1769284237572</created>
@@ -456,7 +459,14 @@
       <option name="project" value="LOCAL" />
       <updated>1769948200794</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="Add CategoryControllerTest">
+      <created>1769949129558</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1769949129558</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -487,7 +497,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add auth.ts type" />
     <MESSAGE value="Add composables useAuthApi" />
     <MESSAGE value="Add auth.ts Pinia module" />
     <MESSAGE value="Add Login vue component" />
@@ -512,7 +521,8 @@
     <MESSAGE value="Update ProductControllerTest" />
     <MESSAGE value="Fix authenticated_user_can_update_product test method" />
     <MESSAGE value="Fix authenticated_user_can_delete_product test method" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix authenticated_user_can_delete_product test method" />
+    <MESSAGE value="Add CategoryControllerTest" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add CategoryControllerTest" />
   </component>
   <component name="WindowStateProjectService">
     <state x="555" y="73" width="800" height="647" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1769603413621">
@@ -523,10 +533,10 @@
       <screen x="0" y="32" width="1920" height="688" />
     </state>
     <state x="645" y="351" width="620" height="369" key="#com.intellij.fileTypes.FileTypeChooser/0.32.1920.688/1920.0.1360.768@0.32.1920.688" timestamp="1769287501647" />
-    <state x="693" y="247" width="524" height="473" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1769896334494">
+    <state x="693" y="247" width="524" height="473" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1769949166780">
       <screen x="0" y="32" width="1920" height="688" />
     </state>
-    <state x="693" y="247" width="524" height="473" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.32.1920.688/1920.0.1360.768@0.32.1920.688" timestamp="1769896334494" />
+    <state x="693" y="247" width="524" height="473" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.32.1920.688/1920.0.1360.768@0.32.1920.688" timestamp="1769949166780" />
     <state x="385" y="62" width="910" height="658" key="CommitChangelistDialog2" timestamp="1769284141688">
       <screen x="0" y="32" width="1920" height="688" />
     </state>
