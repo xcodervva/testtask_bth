@@ -11,8 +11,13 @@ export function useAuthApi() {
         return data;
     };
 
+    const logout = async (): Promise<void> => {
+        await api.post('/logout');
+    };
+
     return {
         login,
+        logout,
         me,
     };
 }
