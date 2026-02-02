@@ -27,6 +27,8 @@ const productsTitle = {
   actions: 'Действия',
 };
 
+
+
 const remove = async (id: number) => {
   try {
     ui.startLoading();
@@ -110,6 +112,21 @@ onMounted(async () => {
           animated
           :rows="5"
       />
+
+      <div style="margin-top: 16px; display: flex; justify-content: space-between;">
+        <div>
+          Всего товаров: <strong>{{ total }}</strong>
+        </div>
+
+        <el-pagination
+            background
+            layout="prev, pager, next"
+            :current-page="currentPage"
+            :page-size="perPage"
+            :total="total"
+            @current-change="fetchProducts"
+        />
+      </div>
     </el-card>
   </AdminLayout>
 </template>

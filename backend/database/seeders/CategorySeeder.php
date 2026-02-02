@@ -14,17 +14,18 @@ class CategorySeeder extends Seeder
     public function run(): void
     {
         $categories = [
-            ['name' => 'Electronics', 'description' => 'Electronic gadgets and devices'],
-            ['name' => 'Books', 'description' => 'Books of all genres'],
-            ['name' => 'Clothing', 'description' => 'Men and Women clothing'],
-            ['name' => 'Electronics 2', 'description' => 'Electronic gadgets and devices 2'],
-            ['name' => 'Books 2', 'description' => 'Books of all genres 2'],
-            ['name' => 'Clothing 2', 'description' => 'Men and Women clothing 2'],
+            'Electronics',
+            'Books',
+            'Clothing',
+            'Home',
+            'Sports',
         ];
 
-        foreach ($categories as $cat)
-        {
-            Category::updateOrCreate(['name' => $cat['name']], $cat);
+        foreach ($categories as $name) {
+            Category::updateOrCreate(
+                ['name' => $name],
+                ['name' => $name]
+            );
         }
     }
 }
