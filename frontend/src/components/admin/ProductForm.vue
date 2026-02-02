@@ -7,7 +7,6 @@ import { productSchema } from '@/validation/product.schema';
 import type { ProductForm as ProductFormType } from '@/validation/product.schema';
 import { useUserRouter } from '@/composables/useUserRouter';
 import { useProductStore } from '@/stores/product';
-import {storeToRefs} from "pinia";
 
 const props = defineProps<{
   model: ProductFormType

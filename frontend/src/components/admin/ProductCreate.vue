@@ -1,13 +1,16 @@
 <script setup lang="ts">
-import { reactive } from 'vue';
+import {onMounted, reactive} from 'vue';
+import type { ProductForm as ProductFormType } from '@/validation/product.schema';
+
 import AdminLayout from '@/layouts/AdminLayout.vue';
 import ProductForm from './ProductForm.vue';
 
+import { useUiStore } from '@/stores/ui';
 import { useProductApi } from '@/composables/useProductApi';
 import { useUserRouter } from '@/composables/useUserRouter';
-import type { ProductForm as ProductFormType } from '@/validation/product.schema';
 
 const productApi = useProductApi();
+const ui = useUiStore();
 const { goToProducts } = useUserRouter();
 
 const productCreateTitles = {
@@ -25,6 +28,14 @@ const submit = async () => {
   await productApi.createProduct(form);
   goToProducts();
 };
+
+onMounted( () => {
+  try {
+  }
+  finally {
+    ui.stopLoading();
+  }
+});
 </script>
 
 <template>

@@ -1,17 +1,20 @@
 <script setup lang="ts">
 import { onMounted, reactive } from 'vue';
 import { useRoute } from 'vue-router';
+import { storeToRefs } from "pinia";
+import type { ProductForm as ProductFormType } from '@/validation/product.schema';
 
 import AdminLayout from '@/layouts/AdminLayout.vue';
 import ProductForm from './ProductForm.vue';
 
 import { useProductApi } from '@/composables/useProductApi';
 import { useUserRouter } from '@/composables/useUserRouter';
-import type { ProductForm as ProductFormType } from '@/validation/product.schema';
-import { useProductStore } from "../../stores/product";
-import { storeToRefs } from "pinia";
+import { useUiStore } from '@/stores/ui';
+import { useProductStore } from "@/stores/product";
 
 const productStore = useProductStore();
+const ui = useUiStore();
+
 const route = useRoute();
 const productApi = useProductApi();
 const { goToProducts } = useUserRouter();
@@ -35,12 +38,17 @@ const submit = async () => {
 };
 
 onMounted(async () => {
-  await productStore.fetchProductById(productId);
+  try {
+    await productStore.fetchProductById(productId);
 
-  form.name = productById.value.name;
-  form.price = productById.value.price;
-  form.category_id = productById.value.category.id;
-  form.description = productById.value.description ?? '';
+    form.name = productById.value.name;
+    form.price = productById.value.price;
+    form.category_id = productById.value.category.id;
+    form.description = productById.value.description ?? '';
+  }
+  finally {
+    ui.stopLoading();
+  }
 });
 </script>
 

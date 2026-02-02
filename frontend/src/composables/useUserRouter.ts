@@ -1,23 +1,28 @@
 import { useRouter } from 'vue-router';
+import { nextTick } from "@vue/runtime-core";
+
+import { useUiStore } from '@/stores/ui';
 
 export function useUserRouter() {
     const router = useRouter();
+    const ui = useUiStore();
 
-    const goToLogin = () => {
-        router.push({ name: 'login' });
+    const navigate = async (to: any) => {
+        ui.startLoading('Загрузка страницы...');
+
+        // даём Vue показать overlay
+        await nextTick();
+
+        await router.push(to);
     };
 
-    const goToProducts = async () => {
-        await router.push({name: 'products'});
-    };
+    const goToLogin = () => navigate({ name: 'login' });
 
-    const goToProductCreate = async () => {
-        await router.push({ name: 'products.create' });
-    };
+    const goToProducts = () => navigate({name: 'products'});
 
-    const goToProductEdit = (id: number) => {
-        router.push({ name: 'products.edit', params: { id } });
-    };
+    const goToProductCreate = () => navigate({ name: 'products.create' });
+
+    const goToProductEdit = (id: number) => navigate({ name: 'products.edit', params: { id }});
 
     return {
         goToLogin,

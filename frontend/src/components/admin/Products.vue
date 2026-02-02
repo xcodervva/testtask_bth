@@ -6,8 +6,10 @@ import AdminLayout from '@/layouts/AdminLayout.vue';
 import { useUserRouter } from '@/composables/useUserRouter';
 import { useProductStore } from '@/stores/product';
 import type { Product } from '@/types/product';
+import { useUiStore } from '@/stores/ui';
 
 const productStore = useProductStore();
+const ui = useUiStore();
 const { initialized, loading, page, products, total } = storeToRefs(productStore);
 const { goToProductCreate, goToProductEdit, routingLoading } = useUserRouter();
 
@@ -38,7 +40,13 @@ const editItem = (id: number) => {
 };
 
 onMounted(async () => {
-  await productStore.fetchProducts();
+  try {
+    await productStore.fetchProducts();
+  }
+  finally {
+    ui.stopLoading();
+  }
+
 });
 </script>
 
