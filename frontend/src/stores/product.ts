@@ -9,6 +9,7 @@ import type { Product, ProductPayload, Paginated } from '@/types/product';
 export const useProductStore = defineStore('product', () => {
     const productApi = useProductApi();
     const products = ref<Product[]>([]);
+    const productById = ref<Product>({});
     const page = ref<Paginated<Product> | null>(null);
     const total = ref(0);
 
@@ -31,35 +32,46 @@ export const useProductStore = defineStore('product', () => {
         1000
     );
 
-    const fetchProduct = async (id: number) => {
+    const fetchProductById = async (id: number) => {
         await withLoader(async () => {
-            const { data } = productApi.getProducts(id);
+            const { data } = await productApi.getProductById(id);
+            productById.value = data.data;
         });
     };
 
-    const createProduct = async (payload: ProductPayload) => {
-        await withLoader(() => productApi.createProduct(payload));
-    };
+    const createProduct = useDebounceFn(
+        async (payload: ProductPayload) => {
+            await withLoader(async () => {
+                await productApi.createProduct(payload);
+                await fetchProducts();
+            });
+        },
+        1000
+    );
 
     const updateProduct = async (id: number, payload: ProductPayload) => {
-        await withLoader(() => productApi.updateProduct(id, payload));
+        await withLoader(async () => {
+            await productApi.updateProduct(id, payload);
+            await fetchProducts();
+        });
     };
 
     const deleteProduct = async (id: number) => {
-        await withLoader(() => {
-            productApi.deleteProduct(id);
-            fetchProducts();
+        await withLoader(async () => {
+            await productApi.deleteProduct(id);
+            await fetchProducts();
         });
     };
 
     return {
         products,
+        productById,
         page,
         loading,
         error,
         fetchProducts,
         initialized,
-        fetchProduct,
+        fetchProductById,
         createProduct,
         updateProduct,
         deleteProduct,

@@ -17,8 +17,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1f1356f4-1db3-4186-b378-aa21560ef2cd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/admin/ProductEdit.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/tests/Feature/AuthControllerTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/tests/Feature/AuthControllerTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/admin/ProductForm.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/admin/ProductForm.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/admin/Products.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/admin/Products.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/composables/useProductApi.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/composables/useProductApi.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/composables/useUserRouter.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/composables/useUserRouter.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/layouts/AdminLayout.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/layouts/AdminLayout.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/router/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/router/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/stores/product.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/stores/product.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,7 +175,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/frontend/src/components/admin" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -182,6 +189,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/frontend/src/components/admin" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
@@ -203,7 +211,9 @@
       <workItem from="1769752886671" duration="11263000" />
       <workItem from="1769839035725" duration="20613000" />
       <workItem from="1769891592353" duration="5046000" />
-      <workItem from="1769946078433" duration="7237000" />
+      <workItem from="1769946078433" duration="12937000" />
+      <workItem from="1769962005178" duration="365000" />
+      <workItem from="1770052693883" duration="6860000" />
     </task>
     <task id="LOCAL-00001" summary="Init project">
       <created>1769284237572</created>
@@ -492,7 +502,14 @@
       <option name="project" value="LOCAL" />
       <updated>1769953704673</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="Add guest_cannot_logout to AuthControllerTest">
+      <created>1769954099148</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1769954099148</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -523,7 +540,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Update AuthController with logout function" />
     <MESSAGE value="Add validation rules for login form on Login.vue" />
     <MESSAGE value="Add type for product" />
     <MESSAGE value="Create useProductApi" />
@@ -548,7 +564,8 @@
     <MESSAGE value="Add login_fails_with_invalid_credentials to AuthControllerTest" />
     <MESSAGE value="Add login_fails_with_invalid_payload to AuthControllerTest" />
     <MESSAGE value="Add authenticated_user_can_logout to AuthControllerTest" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add authenticated_user_can_logout to AuthControllerTest" />
+    <MESSAGE value="Add guest_cannot_logout to AuthControllerTest" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add guest_cannot_logout to AuthControllerTest" />
   </component>
   <component name="WindowStateProjectService">
     <state x="555" y="73" width="800" height="647" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1769603413621">
@@ -571,10 +588,10 @@
       <screen x="0" y="32" width="1920" height="688" />
     </state>
     <state x="791" y="488" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog/0.32.1920.688/1920.0.1360.768@0.32.1920.688" timestamp="1769754755843" />
-    <state x="727" y="95" width="455" height="625" key="RollbackChangesDialog" timestamp="1769459457956">
+    <state x="727" y="95" width="455" height="625" key="RollbackChangesDialog" timestamp="1770058900701">
       <screen x="0" y="32" width="1920" height="688" />
     </state>
-    <state x="727" y="95" width="455" height="625" key="RollbackChangesDialog/0.32.1920.688/1920.0.1360.768@0.32.1920.688" timestamp="1769459457956" />
+    <state x="727" y="95" width="455" height="625" key="RollbackChangesDialog/0.32.1920.688/1920.0.1360.768@0.32.1920.688" timestamp="1770058900701" />
     <state x="449" y="32" width="1012" height="688" key="SettingsEditor" timestamp="1769283466011">
       <screen x="0" y="32" width="1920" height="688" />
     </state>
@@ -587,10 +604,10 @@
       <screen x="0" y="32" width="1920" height="688" />
     </state>
     <state x="555" y="222" width="800" height="498" key="Vcs.Push.Dialog.v2/0.32.1920.688/1920.0.1360.768@0.32.1920.688" timestamp="1769896267209" />
-    <state x="654" y="32" width="612" height="688" key="find.popup" timestamp="1769765766123">
+    <state x="654" y="32" width="805" height="688" key="find.popup" timestamp="1769954503720">
       <screen x="0" y="32" width="1920" height="688" />
     </state>
-    <state x="654" y="32" width="612" height="688" key="find.popup/0.32.1920.688/1920.0.1360.768@0.32.1920.688" timestamp="1769765766123" />
+    <state x="654" y="32" width="805" height="688" key="find.popup/0.32.1920.688/1920.0.1360.768@0.32.1920.688" timestamp="1769954503720" />
     <state x="624" y="260" key="run.anything.popup" timestamp="1769667307370">
       <screen x="0" y="32" width="1920" height="688" />
     </state>

@@ -1,8 +1,9 @@
 <script setup lang="ts">
 import { useAuthStore } from '@/stores/auth';
 import { useUserRouter } from '@/composables/useUserRouter';
+import {storeToRefs} from "pinia";
 
-const auth = useAuthStore();
+const authStore = useAuthStore();
 
 const adminLayoutTitles = {
   goods: 'Админка товаров',
@@ -10,9 +11,10 @@ const adminLayoutTitles = {
 };
 
 const { goToLogin } = useUserRouter();
+const { loading } = storeToRefs(authStore);
 
 const logout = async () => {
-  await auth.logout();
+  await authStore.logout();
   goToLogin();
 }
 </script>

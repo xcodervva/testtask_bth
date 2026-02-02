@@ -10,10 +10,10 @@ export function useProductApi() {
         return response;
     }
 
-    const getProduct = async (id: number) => {
-        const { data } = await api.get<Product>(`/products/${id}`);
+    const getProductById = async (id: number) => {
+        const response = await api.get<Product>(`/products/${id}`);
 
-        return data;
+        return response;
     }
 
     const createProduct = async (payload: ProductPayload) => {
@@ -30,7 +30,7 @@ export function useProductApi() {
 
     return {
         getProducts,
-        getProduct,
+        getProductById,
         createProduct,
         updateProduct,
         deleteProduct,

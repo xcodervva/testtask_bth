@@ -6,6 +6,8 @@ import { useCategoryApi } from '@/composables/useCategoryApi';
 import { productSchema } from '@/validation/product.schema';
 import type { ProductForm as ProductFormType } from '@/validation/product.schema';
 import { useUserRouter } from '@/composables/useUserRouter';
+import { useProductStore } from '@/stores/product';
+import {storeToRefs} from "pinia";
 
 const props = defineProps<{
   model: ProductFormType
@@ -16,6 +18,7 @@ const emit = defineEmits<{
 }>();
 
 const { goToProducts } = useUserRouter();
+const productStore = useProductStore();
 
 const productFormTitles = {
   name: 'Название',

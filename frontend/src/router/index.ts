@@ -20,12 +20,12 @@ const routes = [
         component: () => import('@/components/admin/ProductCreate.vue'),
         meta: { requiresAuth: true },
     },
-    // {
-    //     path: '/admin/products/:id/edit',
-    //     name: 'products.edit',
-    //     component: ProductEdit,
-    //     meta: { requiresAuth: true },
-    // },
+    {
+         path: '/admin/products/:id/edit',
+         name: 'products.edit',
+         component: import('@/components/admin/ProductEdit.vue'),
+         meta: { requiresAuth: true },
+    },
 ];
 
 export const router = createRouter({
