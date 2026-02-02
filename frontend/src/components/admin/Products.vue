@@ -25,9 +25,8 @@ const productsTitle = {
   delete_no: 'Нет',
   delete: 'Удалить',
   actions: 'Действия',
+  all_goods: 'Всего товаров:',
 };
-
-
 
 const remove = async (id: number) => {
   try {
@@ -47,14 +46,17 @@ const editItem = (id: number) => {
   goToProductEdit(id);
 };
 
-onMounted(async () => {
+const callFetchProducts = async (page) => {
   try {
     await productStore.fetchProducts();
   }
   finally {
     ui.stopLoading();
   }
+};
 
+onMounted(async () => {
+  await callFetchProducts(page);
 });
 </script>
 
@@ -115,7 +117,7 @@ onMounted(async () => {
 
       <div style="margin-top: 16px; display: flex; justify-content: space-between;">
         <div>
-          Всего товаров: <strong>{{ total }}</strong>
+          {{ productsTitle.all_goods }} <strong>{{ total }}</strong>
         </div>
 
         <el-pagination
@@ -124,7 +126,8 @@ onMounted(async () => {
             :current-page="currentPage"
             :page-size="perPage"
             :total="total"
-            @current-change="fetchProducts"
+            @current-change="callFetchProducts"
+            v-loading="loading"
         />
       </div>
     </el-card>
