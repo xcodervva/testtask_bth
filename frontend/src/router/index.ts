@@ -23,7 +23,7 @@ const routes = [
     {
          path: '/admin/products/:id/edit',
          name: 'products.edit',
-         component: import('@/components/admin/ProductEdit.vue'),
+         component: () => import('@/components/admin/ProductEdit.vue'),
          meta: { requiresAuth: true },
     },
 ];

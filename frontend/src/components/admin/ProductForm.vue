@@ -121,7 +121,7 @@ const submit = async () => {
       <el-input
           v-model="props.model.description"
           type="textarea"
-          rows="3"
+          :rows="3"
       />
     </el-form-item>
 

@@ -17,13 +17,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1f1356f4-1db3-4186-b378-aa21560ef2cd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/frontend/src/stores/ui.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/components/admin/ProductCreate.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/admin/ProductCreate.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/admin/ProductEdit.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/admin/ProductEdit.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/components/admin/ProductForm.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/admin/ProductForm.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/components/admin/Products.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/admin/Products.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/composables/useUserRouter.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/composables/useUserRouter.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/router/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/router/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/stores/product.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/stores/product.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -211,7 +210,7 @@
       <workItem from="1769891592353" duration="5046000" />
       <workItem from="1769946078433" duration="12937000" />
       <workItem from="1769962005178" duration="365000" />
-      <workItem from="1770052693883" duration="8581000" />
+      <workItem from="1770052693883" duration="9904000" />
     </task>
     <task id="LOCAL-00001" summary="Init project">
       <created>1769284237572</created>
@@ -514,7 +513,14 @@
       <option name="project" value="LOCAL" />
       <updated>1770060649807</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="Add global preloader">
+      <created>1770062327724</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1770062327724</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -545,7 +551,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add type for product" />
     <MESSAGE value="Create useProductApi" />
     <MESSAGE value="Create useCategoryApi" />
     <MESSAGE value="Add zod validation schema for product" />
@@ -570,7 +575,8 @@
     <MESSAGE value="Add authenticated_user_can_logout to AuthControllerTest" />
     <MESSAGE value="Add guest_cannot_logout to AuthControllerTest" />
     <MESSAGE value="Few fixes on frontend" />
-    <option name="LAST_COMMIT_MESSAGE" value="Few fixes on frontend" />
+    <MESSAGE value="Add global preloader" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add global preloader" />
   </component>
   <component name="WindowStateProjectService">
     <state x="555" y="73" width="800" height="647" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1769603413621">

@@ -32,36 +32,39 @@ export const useProductStore = defineStore('product', () => {
         1000
     );
 
-    const fetchProductById = async (id: number) => {
+    const fetchProductById = useDebounceFn(async (id: number) => {
         await withLoader(async () => {
-            const { data } = await productApi.getProductById(id);
+            const {data} = await productApi.getProductById(id);
             productById.value = data.data;
         });
-    };
-
-    const createProduct = useDebounceFn(
-        async (payload: ProductPayload) => {
-            await withLoader(async () => {
-                await productApi.createProduct(payload);
-                await fetchProducts();
-            });
         },
         1000
     );
 
-    const updateProduct = async (id: number, payload: ProductPayload) => {
+    const createProduct = useDebounceFn(async (payload: ProductPayload) => {
+            await withLoader(async () => {
+                await productApi.createProduct(payload);
+                await fetchProducts();
+            });
+        }, 1000
+    );
+
+    const updateProduct = useDebounceFn(async (id: number, payload: ProductPayload) => {
         await withLoader(async () => {
             await productApi.updateProduct(id, payload);
             await fetchProducts();
         });
-    };
+        },
+        1000
+    );
 
-    const deleteProduct = async (id: number) => {
+    const deleteProduct = useDebounceFn(async (id: number) => {
         await withLoader(async () => {
             await productApi.deleteProduct(id);
             await fetchProducts();
         });
-    };
+        }, 1000
+    );
 
     return {
         products,

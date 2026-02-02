@@ -5,11 +5,11 @@ import type { ProductForm as ProductFormType } from '@/validation/product.schema
 import AdminLayout from '@/layouts/AdminLayout.vue';
 import ProductForm from './ProductForm.vue';
 
+import { useProductStore } from '@/stores/product';
 import { useUiStore } from '@/stores/ui';
-import { useProductApi } from '@/composables/useProductApi';
 import { useUserRouter } from '@/composables/useUserRouter';
 
-const productApi = useProductApi();
+const productStore = useProductStore();
 const ui = useUiStore();
 const { goToProducts } = useUserRouter();
 
@@ -25,7 +25,7 @@ const form = reactive<ProductFormType>({
 });;
 
 const submit = async () => {
-  await productApi.createProduct(form);
+  await productStore.createProduct(form);
   goToProducts();
 };
 

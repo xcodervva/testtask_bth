@@ -28,7 +28,13 @@ const productsTitle = {
 };
 
 const remove = async (id: number) => {
-  await productStore.deleteProduct(id);
+  try {
+    ui.startLoading();
+    await productStore.deleteProduct(id);
+  }
+  finally {
+    ui.stopLoading();
+  }
 };
 
 const addItem = async () => {
