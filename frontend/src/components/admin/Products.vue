@@ -1,6 +1,7 @@
 <script setup lang="ts">
-import { ref, onMounted } from 'vue';
+import {ref, onMounted, watch} from 'vue';
 import { storeToRefs } from "pinia";
+import { useDebounceFn } from '@vueuse/core';
 
 import AdminLayout from '@/layouts/AdminLayout.vue';
 import { useUserRouter } from '@/composables/useUserRouter';
@@ -10,10 +11,11 @@ import { useUiStore } from '@/stores/ui';
 
 const productStore = useProductStore();
 const ui = useUiStore();
-const { initialized, loading, page, perPage, products, search, total } = storeToRefs(productStore);
+const { initialized, loading, page, perPage, products, total } = storeToRefs(productStore);
 const { goToProductCreate, goToProductEdit, routingLoading } = useUserRouter();
 
 const currentPage = ref<number | null>(1);
+const searchVal = ref<string | null>(null);
 
 const productsTitle = {
   addItem: 'Добавить товар',
@@ -28,6 +30,7 @@ const productsTitle = {
   delete: 'Удалить',
   actions: 'Действия',
   all_goods: 'Всего товаров:',
+  search: 'Поиск по названию',
 };
 
 const remove = async (id: number) => {
@@ -62,6 +65,16 @@ const callFetchProducts = async () => {
   }
 };
 
+const debouncedSearch = useDebounceFn(async () => {
+  productStore.page = currentPage.value;
+  productStore.search = searchVal.value;
+  await productStore.fetchProducts();
+}, 400);
+
+watch(searchVal, async () => {
+  await debouncedSearch();
+});
+
 onMounted(async () => {
   await callFetchProducts();
 });
@@ -73,6 +86,14 @@ onMounted(async () => {
       <el-button type="primary" @click="addItem" :loading="routingLoading">
         {{ productsTitle.addItem }}
       </el-button>
+
+      <div class="search-wrapper">
+        <el-input
+            v-model="searchVal"
+            :placeholder="productsTitle.search"
+            clearable
+        />
+      </div>
 
       <el-table
           height="400"
@@ -145,5 +166,9 @@ onMounted(async () => {
 <style lang="css">
 .el-popconfirm__action {
   text-align: center;
+}
+
+.search-wrapper {
+  margin: 8px 0;
 }
 </style>
