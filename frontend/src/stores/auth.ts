@@ -29,6 +29,9 @@ export const useAuthStore = defineStore('auth', () => {
             token.value = data.token;
             localStorage.setItem('token', data.token);
 
+            const expiresAt = Date.now() + 30 * 60 * 1000;
+            localStorage.setItem('token_expires_at', String(expiresAt));
+
             api.defaults.headers.common.Authorization = `Bearer ${data.token}`;
 
             user.value = await authApi.me();
@@ -41,30 +44,44 @@ export const useAuthStore = defineStore('auth', () => {
     };
 
     const logout = async () => {
+        token.value = null;
+        user.value = null;
+
+        localStorage.removeItem('token');
+        localStorage.removeItem('token_expires_at');
+        delete api.defaults.headers.common.Authorization;
+
         try {
             const authApi = useAuthApi();
             await authApi.logout();
-        } finally {
-            token.value = null;
-            user.value = null;
+        } catch (e) {
+            //
+        }
+    };
 
-            localStorage.removeItem('token');
-            delete api.defaults.headers.common.Authorization;
+    const checkTokenExpiration = () => {
+        const expiresAt = localStorage.getItem('token_expires_at');
+
+        if (!expiresAt) return;
+
+        const timeLeft = Number(expiresAt) - Date.now();
+        console.log(timeLeft);
+
+        if (timeLeft <= 0) {
+            logout();
+        } else {
+            setTimeout(logout, timeLeft);
         }
     };
 
     return {
-        // state
         token,
         user,
         loading,
         error,
-
-        // getters
         isAuthenticated,
-
-        // actions
         login,
         logout,
+        checkTokenExpiration,
     };
 });
