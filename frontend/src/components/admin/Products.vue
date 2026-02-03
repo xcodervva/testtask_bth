@@ -30,7 +30,7 @@ const productsTitle = {
   delete: 'Удалить',
   actions: 'Действия',
   all_goods: 'Всего товаров:',
-  search: 'Поиск по названию',
+  search: 'Поиск по названию или категории',
 };
 
 const remove = async (id: number) => {
@@ -72,7 +72,7 @@ const debouncedSearch = useDebounceFn(async () => {
 }, 400);
 
 watch(searchVal, async () => {
-  if (!searchVal) {
+  if (!searchVal.value) {
     productStore.search = null;
     await productStore.fetchProducts();
     return;

@@ -26,9 +26,14 @@ class ProductController extends Controller
 
         if ($request->filled('search')) {
             $search = trim($request->string('search'));
+            $driver = $query->getConnection()->getDriverName();
+            $operator = $driver === 'pgsql' ? 'ilike' : 'like';
 
-            $query->where(function ($q) use ($search) {
-                $q->where('name', 'ilike', "%{$search}%");
+            $query->where(function ($q) use ($search, $operator) {
+                $q->where('name', $operator, "%{$search}%")
+                    ->orWhereHas('category', function ($cq) use ($search, $operator) {
+                        $cq->where('name', $operator, "%{$search}%");
+                    });
             });
         }
 

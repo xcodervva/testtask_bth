@@ -76,6 +76,31 @@ class ProductControllerTest extends TestCase
     }
 
     #[Test]
+    public function it_filters_products_by_search_term()
+    {
+        $category = Category::factory()->create();
+
+        Product::factory()->create([
+            'name' => 'iPhone 15',
+            'category_id' => $category->id,
+        ]);
+
+        Product::factory()->create([
+            'name' => 'Samsung TV',
+            'category_id' => $category->id,
+        ]);
+
+        $response = $this->getJson('/api/products?search=iphone');
+
+        $response
+            ->assertOk()
+            ->assertJsonCount(1, 'data')
+            ->assertJsonFragment([
+                'name' => 'iPhone 15',
+            ]);
+    }
+
+    #[Test]
     public function authenticated_user_can_create_product()
     {
         Sanctum::actingAs(User::factory()->create());
