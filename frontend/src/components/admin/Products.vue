@@ -10,8 +10,10 @@ import { useUiStore } from '@/stores/ui';
 
 const productStore = useProductStore();
 const ui = useUiStore();
-const { initialized, loading, page, products, total } = storeToRefs(productStore);
+const { initialized, loading, page, perPage, products, search, total } = storeToRefs(productStore);
 const { goToProductCreate, goToProductEdit, routingLoading } = useUserRouter();
+
+const currentPage = ref<number | null>(1);
 
 const productsTitle = {
   addItem: 'Добавить товар',
@@ -46,8 +48,13 @@ const editItem = (id: number) => {
   goToProductEdit(id);
 };
 
-const callFetchProducts = async (page) => {
+const updateCurrentChange = (_currentPage) => {
+  currentPage.value = _currentPage;
+};
+
+const callFetchProducts = async () => {
   try {
+    productStore.page = currentPage.value;
     await productStore.fetchProducts();
   }
   finally {
@@ -56,7 +63,7 @@ const callFetchProducts = async (page) => {
 };
 
 onMounted(async () => {
-  await callFetchProducts(page);
+  await callFetchProducts();
 });
 </script>
 
@@ -127,6 +134,7 @@ onMounted(async () => {
             :page-size="perPage"
             :total="total"
             @current-change="callFetchProducts"
+            @update:current-page="updateCurrentChange"
             v-loading="loading"
         />
       </div>

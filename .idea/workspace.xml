@@ -17,11 +17,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1f1356f4-1db3-4186-b378-aa21560ef2cd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/frontend/src/types/getProductParams.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/backend/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app/Http/Controllers/Api/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/Http/Controllers/Api/ProductController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/admin/Products.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/admin/Products.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/composables/useProductApi.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/composables/useProductApi.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/stores/product.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/stores/product.ts" afterDir="false" />
+    </list>
+    <list id="6b861c47-b469-48f6-8ca3-b6f354ca3c66" name="Change ProductController index method to use search" comment="">
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/admin/Products.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/admin/Products.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +45,19 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/frontend/src/components/admin/Products.vue">
+      <ranges>
+        <range start1="12" end1="13" start2="12" end2="13" changelist="6b861c47-b469-48f6-8ca3-b6f354ca3c66" />
+        <range start1="15" end1="15" start2="15" end2="17" changelist="6b861c47-b469-48f6-8ca3-b6f354ca3c66" />
+        <range start1="47" end1="47" start2="49" end2="53" changelist="1f1356f4-1db3-4186-b378-aa21560ef2cd" />
+        <range start1="48" end1="49" start2="54" end2="55" changelist="6b861c47-b469-48f6-8ca3-b6f354ca3c66" />
+        <range start1="50" end1="50" start2="56" end2="57" changelist="6b861c47-b469-48f6-8ca3-b6f354ca3c66" />
+        <range start1="58" end1="59" start2="65" end2="66" changelist="6b861c47-b469-48f6-8ca3-b6f354ca3c66" />
+        <range start1="129" end1="129" start2="136" end2="137" changelist="1f1356f4-1db3-4186-b378-aa21560ef2cd" />
+      </ranges>
+    </file>
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -210,7 +226,8 @@
       <workItem from="1769946078433" duration="12937000" />
       <workItem from="1769962005178" duration="365000" />
       <workItem from="1770052693883" duration="12857000" />
-      <workItem from="1770124508782" duration="3880000" />
+      <workItem from="1770124508782" duration="10732000" />
+      <workItem from="1770137905079" duration="712000" />
     </task>
     <task id="LOCAL-00001" summary="Init project">
       <created>1769284237572</created>
@@ -541,7 +558,14 @@
       <option name="project" value="LOCAL" />
       <updated>1770065356688</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="Change ProductController index method to use search">
+      <created>1770129747662</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1770129747662</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -572,7 +596,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add vue-router. Temp commit" />
     <MESSAGE value="Add AdminLayout for auth routes" />
     <MESSAGE value="Add ProductForm component" />
     <MESSAGE value="Add ProductCreate component" />
@@ -597,7 +620,8 @@
     <MESSAGE value="Add preloader to other components" />
     <MESSAGE value="Fix useAuthApi composable" />
     <MESSAGE value="Change db seeds for 50 items" />
-    <option name="LAST_COMMIT_MESSAGE" value="Change db seeds for 50 items" />
+    <MESSAGE value="Change ProductController index method to use search" />
+    <option name="LAST_COMMIT_MESSAGE" value="Change ProductController index method to use search" />
   </component>
   <component name="WindowStateProjectService">
     <state x="555" y="73" width="800" height="647" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1769603413621">
@@ -636,14 +660,18 @@
       <screen x="0" y="32" width="1920" height="688" />
     </state>
     <state x="555" y="222" width="800" height="498" key="Vcs.Push.Dialog.v2/0.32.1920.688/1920.0.1360.768@0.32.1920.688" timestamp="1770067663722" />
-    <state x="654" y="32" width="805" height="688" key="find.popup" timestamp="1769954503720">
+    <state x="654" y="32" width="805" height="688" key="find.popup" timestamp="1770131258922">
       <screen x="0" y="32" width="1920" height="688" />
     </state>
-    <state x="654" y="32" width="805" height="688" key="find.popup/0.32.1920.688/1920.0.1360.768@0.32.1920.688" timestamp="1769954503720" />
+    <state x="654" y="32" width="805" height="688" key="find.popup/0.32.1920.688/1920.0.1360.768@0.32.1920.688" timestamp="1770131258922" />
     <state x="624" y="260" key="run.anything.popup" timestamp="1769667307370">
       <screen x="0" y="32" width="1920" height="688" />
     </state>
     <state x="624" y="260" key="run.anything.popup/0.32.1920.688/1920.0.1360.768@0.32.1920.688" timestamp="1769667307370" />
+    <state x="287" y="210" key="vcs.ApplyPatchDifferentiatedDialog" timestamp="1770137588934">
+      <screen x="0" y="32" width="1920" height="688" />
+    </state>
+    <state x="287" y="210" key="vcs.ApplyPatchDifferentiatedDialog/0.32.1920.688/1920.0.1360.768@0.32.1920.688" timestamp="1770137588934" />
     <state x="685" y="553" width="540" height="167" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1769863111986">
       <screen x="0" y="32" width="1920" height="688" />
     </state>

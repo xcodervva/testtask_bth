@@ -1,11 +1,11 @@
 import api from '@/lib/axios';
 import type { Product, Paginated, ProductPayload } from '@/types/product';
+import type { GetProductsParams } from '@/types/getProductParams';
 
 export function useProductApi() {
-    const getProducts = async (page = 1) => {
+    const getProducts = async (params: GetProductsParams = {}) => {
         const response = await api.get<Paginated<Product>>(
-            `/products?page=${page}`
-        );
+            '/products', { params });
 
         return response;
     };

@@ -10,8 +10,10 @@ export const useProductStore = defineStore('product', () => {
     const productApi = useProductApi();
     const products = ref<Product[]>([]);
     const productById = ref<Product>({});
-    const page = ref<Paginated<Product> | null>(null);
+    const page = ref<number | null>(1);
     const total = ref(0);
+    const perPage = ref<number | null>(null);
+    const search = ref<string| null>(null);
 
     const {
         loading,
@@ -21,11 +23,17 @@ export const useProductStore = defineStore('product', () => {
     } = useWithLoader(1000);
 
     const fetchProducts = useDebounceFn(
-        async (page = 1) => {
+        async () => {
             await withLoader(async () => {
-                const { data } = await productApi.getProducts(page);
+                const params = {
+                    page: page.value,
+                    search: search.value || undefined,
+                };
+
+                const { data } = await productApi.getProducts(params);
                 products.value = data.data;
-                page = data.meta.current_page;
+                page.value = data.meta.current_page;
+                perPage.value = data.meta.per_page;
                 total.value = data.meta.total;
             });
         },
@@ -70,9 +78,11 @@ export const useProductStore = defineStore('product', () => {
         products,
         productById,
         page,
+        perPage,
         loading,
         error,
         total,
+        search,
         fetchProducts,
         initialized,
         fetchProductById,
