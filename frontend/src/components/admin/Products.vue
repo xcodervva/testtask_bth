@@ -72,6 +72,12 @@ const debouncedSearch = useDebounceFn(async () => {
 }, 400);
 
 watch(searchVal, async () => {
+  if (!searchVal) {
+    productStore.search = null;
+    await productStore.fetchProducts();
+    return;
+  }
+
   await debouncedSearch();
 });
 

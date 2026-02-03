@@ -17,13 +17,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1f1356f4-1db3-4186-b378-aa21560ef2cd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/frontend/src/types/getProductParams.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/admin/Products.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/admin/Products.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/composables/useProductApi.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/composables/useProductApi.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/stores/product.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/stores/product.ts" afterDir="false" />
-    </list>
-    <list id="6b861c47-b469-48f6-8ca3-b6f354ca3c66" name="Change ProductController index method to use search" comment="">
       <change beforePath="$PROJECT_DIR$/frontend/src/components/admin/Products.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/admin/Products.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -46,18 +39,8 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/frontend/src/components/admin/Products.vue">
-      <ranges>
-        <range start1="12" end1="13" start2="12" end2="13" changelist="6b861c47-b469-48f6-8ca3-b6f354ca3c66" />
-        <range start1="15" end1="15" start2="15" end2="17" changelist="6b861c47-b469-48f6-8ca3-b6f354ca3c66" />
-        <range start1="47" end1="47" start2="49" end2="53" changelist="1f1356f4-1db3-4186-b378-aa21560ef2cd" />
-        <range start1="48" end1="49" start2="54" end2="55" changelist="6b861c47-b469-48f6-8ca3-b6f354ca3c66" />
-        <range start1="50" end1="50" start2="56" end2="57" changelist="6b861c47-b469-48f6-8ca3-b6f354ca3c66" />
-        <range start1="58" end1="59" start2="65" end2="66" changelist="6b861c47-b469-48f6-8ca3-b6f354ca3c66" />
-        <range start1="129" end1="129" start2="136" end2="137" changelist="1f1356f4-1db3-4186-b378-aa21560ef2cd" />
-      </ranges>
-    </file>
+  <component name="GitRewordedCommitMessages">
+    <option name="onto" value="aeb997fe2795e863bcbf4164d14a8d54c3ee3248" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -227,21 +210,7 @@
       <workItem from="1769962005178" duration="365000" />
       <workItem from="1770052693883" duration="12857000" />
       <workItem from="1770124508782" duration="10732000" />
-      <workItem from="1770137905079" duration="712000" />
-    </task>
-    <task id="LOCAL-00001" summary="Init project">
-      <created>1769284237572</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1769284237572</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Create Dockerfile for php">
-      <created>1769284473044</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1769284473044</updated>
+      <workItem from="1770137905079" duration="3154000" />
     </task>
     <task id="LOCAL-00003" summary="Create default.conf for nginx">
       <created>1769285645821</created>
@@ -565,7 +534,28 @@
       <option name="project" value="LOCAL" />
       <updated>1770129747662</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="Fix pagination on frontend">
+      <created>1770138700721</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1770138700721</updated>
+    </task>
+    <task id="LOCAL-00050" summary="Fix pagination on frontend">
+      <created>1770138753042</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1770138753044</updated>
+    </task>
+    <task id="LOCAL-00051" summary="Add search by product name">
+      <created>1770140958959</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1770140958959</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -596,8 +586,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add AdminLayout for auth routes" />
-    <MESSAGE value="Add ProductForm component" />
     <MESSAGE value="Add ProductCreate component" />
     <MESSAGE value="Set up preloaders" />
     <MESSAGE value="Add useWithLoader composable" />
@@ -621,7 +609,9 @@
     <MESSAGE value="Fix useAuthApi composable" />
     <MESSAGE value="Change db seeds for 50 items" />
     <MESSAGE value="Change ProductController index method to use search" />
-    <option name="LAST_COMMIT_MESSAGE" value="Change ProductController index method to use search" />
+    <MESSAGE value="Fix pagination on frontend" />
+    <MESSAGE value="Add search by product name" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add search by product name" />
   </component>
   <component name="WindowStateProjectService">
     <state x="555" y="73" width="800" height="647" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1769603413621">
@@ -640,6 +630,10 @@
       <screen x="0" y="32" width="1920" height="688" />
     </state>
     <state x="385" y="62" width="910" height="658" key="CommitChangelistDialog2/0.32.1920.688/1920.0.1360.768@0.32.1920.688" timestamp="1769284141688" />
+    <state x="455" y="123" width="1000" height="597" key="Git.Interactive.Rebase.Dialog" timestamp="1770138796271">
+      <screen x="0" y="32" width="1920" height="688" />
+    </state>
+    <state x="455" y="123" width="1000" height="597" key="Git.Interactive.Rebase.Dialog/0.32.1920.688/1920.0.1360.768@0.32.1920.688" timestamp="1770138796271" />
     <state x="791" y="488" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog" timestamp="1769754755843">
       <screen x="0" y="32" width="1920" height="688" />
     </state>
