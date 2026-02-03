@@ -17,8 +17,7 @@ class ProductController extends Controller
     public function index(Request $request)
     {
         $query = Product::query()
-            ->with('category')
-            ->orderByDesc('created_at');
+            ->with('category');
 
         if ($request->filled('category_id')) {
             $query->where('category_id', $request->category_id);

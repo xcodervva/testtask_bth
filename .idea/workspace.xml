@@ -17,9 +17,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1f1356f4-1db3-4186-b378-aa21560ef2cd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/frontend/src/stores/category.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/config/sanctum.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/config/sanctum.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/Http/Controllers/Api/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/Http/Controllers/Api/ProductController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/database/seeders/CategorySeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/database/seeders/CategorySeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/database/seeders/ProductSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/database/seeders/ProductSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/admin/ProductEdit.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/admin/ProductEdit.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/admin/ProductForm.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/admin/ProductForm.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/stores/auth.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/stores/auth.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -214,13 +218,6 @@
       <workItem from="1770052693883" duration="12857000" />
       <workItem from="1770124508782" duration="10732000" />
       <workItem from="1770137905079" duration="7201000" />
-    </task>
-    <task id="LOCAL-00006" summary="Add StoreProductRequest">
-      <created>1769445501966</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1769445501966</updated>
     </task>
     <task id="LOCAL-00007" summary="Update ProductController with store and destroy methods">
       <created>1769448247946</created>
@@ -558,7 +555,14 @@
       <option name="project" value="LOCAL" />
       <updated>1770146895576</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="Add auto logout after 30 min">
+      <created>1770149129032</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1770149129032</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -589,7 +593,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fix deleteProduct method and destroy method for Productcontroller" />
     <MESSAGE value="Rename src -&gt; backend" />
     <MESSAGE value="Create ProductControllerTest" />
     <MESSAGE value="Add CategoryFactory" />
@@ -614,7 +617,8 @@
     <MESSAGE value="Update UI after search clear" />
     <MESSAGE value="Update ProductControllerTest with it_filters_products_by_search_term" />
     <MESSAGE value="Update ProductControllerTest with it_filters_products_by_category_and_search" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update ProductControllerTest with it_filters_products_by_category_and_search" />
+    <MESSAGE value="Add auto logout after 30 min" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add auto logout after 30 min" />
   </component>
   <component name="WindowStateProjectService">
     <state x="555" y="73" width="800" height="647" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1769603413621">

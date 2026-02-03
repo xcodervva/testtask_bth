@@ -65,7 +65,6 @@ export const useAuthStore = defineStore('auth', () => {
         if (!expiresAt) return;
 
         const timeLeft = Number(expiresAt) - Date.now();
-        console.log(timeLeft);
 
         if (timeLeft <= 0) {
             logout();

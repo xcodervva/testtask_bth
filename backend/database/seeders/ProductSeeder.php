@@ -24,10 +24,9 @@ class ProductSeeder extends Seeder
         // создаём 50 товаров
         Product::factory()
             ->count(50)
-            ->make()
-            ->each(function ($product) use ($categories) {
-                $product->category_id = $categories->random()->id;
-                $product->save();
-            });
+            ->state(function () use ($categories) {
+                return ['category_id' => $categories->random()->id];
+            })
+            ->create();
     }
 }

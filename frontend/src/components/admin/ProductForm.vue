@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref, onMounted, toRef } from 'vue';
+import { ref, onMounted } from 'vue';
 import type { FormInstance, FormRules } from 'element-plus';
 
 import { useCategoryApi } from '@/composables/useCategoryApi';
@@ -7,6 +7,8 @@ import { productSchema } from '@/validation/product.schema';
 import type { ProductForm as ProductFormType } from '@/validation/product.schema';
 import { useUserRouter } from '@/composables/useUserRouter';
 import { useProductStore } from '@/stores/product';
+import { useCategoryStore } from '@/stores/category';
+import {storeToRefs} from "pinia";
 
 const props = defineProps<{
   model: ProductFormType
@@ -18,6 +20,8 @@ const emit = defineEmits<{
 
 const { goToProducts } = useUserRouter();
 const productStore = useProductStore();
+const categoryStore = useCategoryStore();
+const { categories } = storeToRefs(categoryStore);
 
 const productFormTitles = {
   name: 'Название',
@@ -30,9 +34,6 @@ const productFormTitles = {
 };
 
 const formRef = ref<FormInstance>();
-const categories = ref<{ id: number; name: string }[]>([]);
-
-const categoryApi = useCategoryApi();
 
 const rules: FormRules<ProductFormType> = {
   name: [
@@ -65,7 +66,7 @@ const rules: FormRules<ProductFormType> = {
 };
 
 onMounted(async () => {
-  categories.value = await categoryApi.getCategories();
+  await categoryStore.fetchCategories();
 });
 
 const goBack = () => {
