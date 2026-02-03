@@ -24,7 +24,6 @@ export const useProductStore = defineStore('product', () => {
         async (page = 1) => {
             await withLoader(async () => {
                 const { data } = await productApi.getProducts(page);
-                console.log(data.meta);
                 products.value = data.data;
                 page = data.meta.current_page;
                 total.value = data.meta.total;

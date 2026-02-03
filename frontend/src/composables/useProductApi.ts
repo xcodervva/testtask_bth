@@ -8,25 +8,25 @@ export function useProductApi() {
         );
 
         return response;
-    }
+    };
 
     const getProductById = async (id: number) => {
         const response = await api.get<Product>(`/products/${id}`);
 
         return response;
-    }
+    };
 
     const createProduct = async (payload: ProductPayload) => {
         await api.post('/products', payload);
-    }
+    };
 
     const updateProduct = async (id: number, payload: ProductPayload) => {
         await api.put(`/products/${id}`, payload);
-    }
+    };
 
     const deleteProduct = async (id: number) => {
         await api.delete(`/products/${id}`);
-    }
+    };
 
     return {
         getProducts,

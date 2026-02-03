@@ -24,6 +24,14 @@ class ProductController extends Controller
             $query->where('category_id', $request->category_id);
         }
 
+        if ($request->filled('search')) {
+            $search = trim($request->string('search'));
+
+            $query->where(function ($q) use ($search) {
+                $q->where('name', 'ilike', "%{$search}%");
+            });
+        }
+
         $products = $query->paginate(10);
 
         return ProductResource::collection($products);
