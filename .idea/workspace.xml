@@ -18,7 +18,12 @@
   <component name="ChangeListManager">
     <list default="true" id="1f1356f4-1db3-4186-b378-aa21560ef2cd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app/Http/Controllers/Api/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/Http/Controllers/Api/ProductController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/config/sanctum.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/config/sanctum.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/composables/useUserRouter.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/composables/useUserRouter.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/composables/useWithLoader.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/composables/useWithLoader.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/stores/auth.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/stores/auth.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/stores/product.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/stores/product.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/stores/ui.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/stores/ui.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -212,14 +217,8 @@
       <workItem from="1770052693883" duration="12857000" />
       <workItem from="1770124508782" duration="10732000" />
       <workItem from="1770137905079" duration="7201000" />
-      <workItem from="1770185318857" duration="1397000" />
-    </task>
-    <task id="LOCAL-00008" summary="Create frontend folder and add Dockerfile for it">
-      <created>1769470120448</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1769470120448</updated>
+      <workItem from="1770185318857" duration="8342000" />
+      <workItem from="1770212495443" duration="3655000" />
     </task>
     <task id="LOCAL-00009" summary="Add Element Plus to frontend">
       <created>1769515838759</created>
@@ -557,7 +556,14 @@
       <option name="project" value="LOCAL" />
       <updated>1770154314436</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="Change order for getting product from db">
+      <created>1770186796015</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1770186796016</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -588,7 +594,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Create ProductControllerTest" />
     <MESSAGE value="Add CategoryFactory" />
     <MESSAGE value="Add ProductFactory" />
     <MESSAGE value="Update ProductControllerTest" />
@@ -613,7 +618,8 @@
     <MESSAGE value="Update ProductControllerTest with it_filters_products_by_category_and_search" />
     <MESSAGE value="Add auto logout after 30 min" />
     <MESSAGE value="Create category module for Pinia" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create category module for Pinia" />
+    <MESSAGE value="Change order for getting product from db" />
+    <option name="LAST_COMMIT_MESSAGE" value="Change order for getting product from db" />
   </component>
   <component name="WindowStateProjectService">
     <state x="555" y="73" width="800" height="647" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1769603413621">

@@ -22,7 +22,7 @@ export const useProductStore = defineStore('product', () => {
         withLoader,
     } = useWithLoader(1000);
 
-    const fetchProducts = useDebounceFn(
+    const fetchProducts =
         async () => {
             await withLoader(async () => {
                 const params = {
@@ -30,49 +30,41 @@ export const useProductStore = defineStore('product', () => {
                     search: search.value || undefined,
                 };
 
-                const { data } = await productApi.getProducts(params);
+                const {data} = await productApi.getProducts(params);
                 products.value = data.data;
                 page.value = data.meta.current_page;
                 perPage.value = data.meta.per_page;
                 total.value = data.meta.total;
             });
-        },
-        1000
-    );
+        };
 
-    const fetchProductById = useDebounceFn(async (id: number) => {
+    const fetchProductById = async (id: number) => {
         await withLoader(async () => {
             const {data} = await productApi.getProductById(id);
             productById.value = data.data;
         });
-        },
-        1000
-    );
+    };
 
-    const createProduct = useDebounceFn(async (payload: ProductPayload) => {
+    const createProduct = async (payload: ProductPayload) => {
             await withLoader(async () => {
                 await productApi.createProduct(payload);
                 await fetchProducts();
             });
-        }, 1000
-    );
+    };
 
-    const updateProduct = useDebounceFn(async (id: number, payload: ProductPayload) => {
+    const updateProduct = async (id: number, payload: ProductPayload) => {
         await withLoader(async () => {
             await productApi.updateProduct(id, payload);
             await fetchProducts();
         });
-        },
-        1000
-    );
+    };
 
-    const deleteProduct = useDebounceFn(async (id: number) => {
+    const deleteProduct = async (id: number) => {
         await withLoader(async () => {
             await productApi.deleteProduct(id);
             await fetchProducts();
         });
-        }, 1000
-    );
+    };
 
     return {
         products,

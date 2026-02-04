@@ -1,22 +1,20 @@
 import { defineStore } from 'pinia';
 import { ref, computed } from 'vue';
 
-import { useAuthApi } from '@/composables/useAuthApi';
 import api from '@/lib/axios';
+import { useAuthApi } from '@/composables/useAuthApi';
+import { useUiStore } from '@/stores/ui';
 
 import type { AuthResponse, LoginCredentials, User } from '@/types/auth';
 
 export const useAuthStore = defineStore('auth', () => {
-    // state (declarative)
     const token = ref<string | null>(localStorage.getItem('token'));
     const user = ref<User | null>(null);
     const loading = ref(false);
     const error = ref<string | null>(null);
 
-    // getters
     const isAuthenticated = computed(() => !!token.value);
 
-    // actions
     const login = async (credentials: LoginCredentials) => {
         loading.value = true;
         error.value = null;
@@ -44,6 +42,8 @@ export const useAuthStore = defineStore('auth', () => {
     };
 
     const logout = async () => {
+        const ui = useUiStore();
+        ui.stopLoading();
         token.value = null;
         user.value = null;
 

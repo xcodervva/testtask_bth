@@ -1,12 +1,16 @@
 import { ref } from 'vue';
 
+import { useUiStore } from '@/stores/ui';
+
 export function useWithLoader(minTime = 1000) {
+    const ui = useUiStore();
     const loading = ref(false);
     const initialized = ref(false);
     const error = ref<string | null>(null);
 
     const withLoader = async <T>(fn: () => Promise<T>): Promise<T> => {
-        loading.value = true;
+        ui.startLoading();
+        // loading.value = true;
         error.value = null;
 
         const start = Date.now();
@@ -27,7 +31,8 @@ export function useWithLoader(minTime = 1000) {
                 await new Promise(resolve => setTimeout(resolve, remaining));
             }
 
-            loading.value = false;
+            // loading.value = false;
+            ui.stopLoading();
         }
     };
 
